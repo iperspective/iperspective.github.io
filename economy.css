@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 120vh;
+    background-color: #f0f0f0;
+}
+
+header {
+    background: linear-gradient(to right, #ff6666, #ff3333);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    background-color: #fff;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    background: linear-gradient(to right, #ff6666, #ff3333);
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #45a049;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-button {
+    padding: 20px;
+    font-size: 20px;
+    height: 5%;
+    border: none;
+    border-radius: 7px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.custom-button:hover {
+    background-color: #0056b3;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.economic-indicators {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.economic-indicators li {
+    margin-bottom: 10px;
+}
+
+.economic-indicators li a {
+    display: block;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.economic-indicators li a:hover {
+    background-color: #e0e0e0;
+}
+
+.currency-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.currency-card {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 102, 102, 0.8);
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
+}
+
+.currency-card:hover {
+    background-color: rgba(204, 0, 0, 0.8);
+}
+
+footer {
+    background: linear-gradient(to right, #ff6666, #ff3333);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

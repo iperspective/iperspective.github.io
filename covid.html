@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="covid.css">
+    <title>COVID-19 - Perspective App</title>
+</head>
+<body>
+    <header>
+        <h1>Perspective App</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+            <li onclick="loadSection('global')"><a href="#">Estadísticas Globales</a></li>
+            <li onclick="loadSection('countries')"><a href="#">Estadísticas por Países</a></li>
+        </ul>
+    
+        <a href="categories.html" class="button">Explorar más Categorías</a>
+        <a href="index.html" class="button">Volver al inicio</a>
+
+    </nav>
+    <main>
+        <!-- Contenido específico de la sección de COVID-19 -->
+        <section id="covid" class="container">
+            <iframe id="covidIframe" style="width: 100%; height: 40vh;" frameborder="0" scrolling="no"></iframe>
+
+            <!-- Contenedor para la información -->
+            <div class="info-container">
+                <h2>Datos sobre COVID-19</h2>
+                <p>Descubre información en tiempo real y estadísticas sobre la situación actual del COVID-19. Explora datos globales y por país para entender mejor el impacto de la pandemia.</p>
+            </div>
+
+            <!-- Botones para explorar y volver -->
+            <a href="#" class="button-destacado" onclick="exploreMore()">Explorar más</a>
+            <a href="index.html" class="button-destacado">Volver a Home</a>
+
+            <!-- Sección de Resumen Global -->
+            <section id="summary">
+                <h2>Resumen Global</h2>
+                <div id="totalCases">Total de Casos: <span>100,000,000</span></div>
+                <div id="totalDeaths">Total de Muertes: <span>2,000,000</span></div>
+                <div id="totalRecovered">Total de Recuperados: <span>90,000,000</span></div>
+            </section>
+
+            <!-- Sección de Estadísticas por País -->
+            <section id="countries">
+                <h2>Estadísticas por País</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>País</th>
+                            <th>Casos Totales</th>
+                            <th>Muertes Totales</th>
+                            <th>Recuperados Totales</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>País 1</td>
+                            <td>100,000</td>
+                            <td>1,000</td>
+                            <td>90,000</td>
+                        </tr>
+                        <!-- Agrega más filas según sea necesario -->
+                    </tbody>
+                </table>
+            <!-- Sección de Comparación de Muertes Confirmadas -->
+<section id="deathsComparison" class="graph-section">
+    <h2>Comparación de Muertes Confirmadas</h2>
+    <iframe id="deathsGraph" style="width: 100%; height: 40vh; border: 0px none;"></iframe>
+    <p>Información adicional sobre el gráfico de comparación de muertes confirmadas.</p>
+</section>
+
+<!-- Sección de Trayectoria de Casos Confirmados -->
+<section id="confirmedCasesTrajectory" class="graph-section">
+    <h2>Trayectoria de Casos Confirmados</h2>
+    <iframe id="confirmedCasesGraph" style="width: 100%; height: 40vh; border: 0px none;"></iframe>
+    <p>Información adicional sobre el gráfico de trayectoria de casos confirmados.</p>
+</section>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Perspective App</p>
+    </footer>
+    <script src="covid.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 170vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 100vh;
+    width: 80vh;
+    margin: 20px auto;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background: linear-gradient(to right, #ff6666, #ff3333); /* Tonos rojos pastel */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: false;
+}
+
+main {
+    max-width: 80vh;
+    margin: 10px auto;
+    width: 80vh;
+    height: 1800px;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el subtítulo h2 */
+h2.subtitulo {
+    font-weight: normal; /* Quitar negrita */
+    margin-top:; /* Ajustar el margen superior */
+}
+
+nav {
+    background-color: #ffe6e6; /* Rojo pastel */
+    padding: 1em;
+    margin: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+nav li {
+    margin: 20px 0; /* Ajuste aquí: margen superior e inferior de 10px, margen izquierdo y derecho de 10px */
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    margin: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transición en cambios de color */
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 1.5vh;
+    width: 70vh;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el gráfico */
+#myChart {
+    margin: 20px auto;
+    display: block;
+    width: 80vh;
+    height: 20vh;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 80vh;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.blurred {
+    filter: blur(4px); /* Aplica un desenfoque a las filas */
+}
+
+.container button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    background: linear-gradient(to right, #ff9999, #ff6666); /* Cambio a un gradiente en lugar de un color sólido */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+}
+

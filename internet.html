@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="internet.css">
+    <!-- Importa Moment.js para manejar fechas en Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="internet.js"></script>
+    <title>Perspective App - Datos de Internet</title>
+</head>
+
+<body>
+    <header>
+        <h1>Perspective App</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html" onclick="loadSection('internet')">Volver a Inicio</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <section id="internet" class="container">
+            <iframe id="internetUsersIframe" class="internetIframe" src="https://datos.bancomundial.org/share/widget?indicators=IT.NET.USER.ZS" frameborder='0' scrolling="no"></iframe>
+            <div class="info-container">
+                <h2>Personas que usan Internet (% de la población)</h2>
+                <p>El gráfico muestra el porcentaje de personas que utilizan Internet en diferentes regiones del mundo. Puedes explorar los datos y obtener más información mediante la visualización interactiva.</p>
+            </div>
+        </section>
+
+        <div class="space"></div>
+
+        <section id="internet-map" class="container">
+          <iframe id="internetMapIframe" class="internetIframe" src="https://datos.bancomundial.org/share/widget?indicators=IT.NET.USER.ZS&view=map&year=2022" frameborder='0' scrolling="no"></iframe>
+          <div class="info-container">
+               <h2>Mapa de Personas que usan Internet (% de la población)</h2>
+               <p>El mapa muestra la distribución global del porcentaje de personas que utilizan Internet. Puedes explorar los datos y obtener más información mediante la visualización interactiva.</p>
+            </div>
+        </section>
+
+        <section id="broadband-subscriptions" class="container">
+            <iframe id="broadbandIframe" class="internetIframe" src="https://datos.bancomundial.org/share/widget?end=2022&indicators=IT.NET.BBND&start=1998&type=shaded&view=chart" frameborder='0' scrolling="no"></iframe>
+            <div class="info-container">
+                <h2>Suscripciones a banda ancha fija</h2>
+                <p>El gráfico muestra las suscripciones a banda ancha fija en diferentes regiones del mundo. Puedes explorar los datos y obtener más información mediante la visualización interactiva.</p>
+            </div>
+        </section>
+
+        <div class="space"></div>
+
+        <section id="secure-servers" class="container">
+            <iframe id="secureServersIframe" class="internetIframe" src="https://datos.bancomundial.org/share/widget?indicators=IT.NET.SECR.P6" frameborder='0' scrolling="no"></iframe>
+            <div class="info-container">
+                <h2>Servidores de Internet seguros (por cada millón de personas)</h2>
+                <p>El gráfico muestra la cantidad de servidores de Internet seguros por cada millón de personas en diferentes regiones del mundo. Puedes explorar los datos y obtener más información mediante la visualización interactiva.</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <button id="goToTopBtn" onclick="goToTop()">↑</button>
+        <p>&copy; 2024 Perspective App</p>
+    </footer>
+</body>
+
+</html>

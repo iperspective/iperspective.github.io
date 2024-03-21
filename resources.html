@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources.css">
+    <script type="module" src="resources.js" defer></script>
+    <title>Recursos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Perspective App</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html" onclick="loadSection('resources')">Volver a Inicio</a></li>
+            <li><button onclick="scrollToSection('resources')">Rendimientos de cultivos</button></li>
+            <li><button onclick="scrollToSection('resources-map')">Rendimientos de cultivos (Mapa)</button></li>
+            <li><button onclick="scrollToSection('farmMachinery')">Maquinaria agrícola por unidad de tierra agrícola</button></li>
+        </ul>
+    </nav>
+    <main>
+
+        <section id="resources" class="container">
+            <div class="info-container">
+                <h2>Rendimientos de cultivos clave en el mundo (1961-2021)</h2>
+                <p>Los rendimientos se miden en toneladas por hectárea. Los datos provienen de la Organización de las Naciones Unidas para la Agricultura y la Alimentación.</p>
+                <iframe src="https://ourworldindata.org/grapher/key-crop-yields" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+            </div>
+        </section>
+
+        <div class="space"></div>
+
+        <section id="resources-map" class="container">
+            <div class="info-container">
+                <h2>Rendimientos de cultivos básicos importantes (2021) - Mapa</h2>
+                <p>Todos los rendimientos se miden en toneladas por hectárea. Los datos provienen de la Organización de las Naciones Unidas para la Agricultura y la Alimentación.</p>
+                <iframe src="https://ourworldindata.org/grapher/yields-of-important-staple-crops?tab=map" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+            </div>
+        </section>
+
+        <div class="space"></div>
+
+        <section id="farmMachinery" class="container">
+            <div class="info-container">
+            <h2>Maquinaria agrícola por unidad de tierra agrícola, 2019</h2>
+            <p>La maquinaria agrícola se mide en unidades de potencia. Esto se divide por la tierra agrícola total para dar el uso promedio de maquinaria por 1000 hectáreas de tierra agrícola.</p>
+            <iframe src="https://ourworldindata.org/grapher/machinery-per-agricultural-land" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <button id="goToTopBtn" onclick="goToTop()">↑</button>
+        <p>&copy; 2024 Perspective App</p>
+    </footer>
+    <script src="resources.js"></script>
+</body>
+
+</html>

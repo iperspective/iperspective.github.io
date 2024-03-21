@@ -1,0 +1,41 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crypto_movements.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="crypto_movements.js"></script>
+    <title>Perspective App - Crypto Movements</title>
+</head>
+
+<body>
+    <header>
+        <h1>Perspective App - Crypto Movements</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html">Volver a Inicio</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="crypto-movements-content" class="content-container">
+            <!-- Contenedor de información del mercado -->
+            <div id="market-info-container">
+                <!-- Aquí se mostrará la información dinámica -->
+                <canvas id="volumeChart"></canvas>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Perspective App - Crypto - Movements</p>
+    </footer>
+
+    <script type="module" src="crypto_movements.js"></script>
+</body>
+
+</html>

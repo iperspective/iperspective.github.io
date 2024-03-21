@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversor Conservador - Perspective App</title>
+    <link rel="stylesheet" href="inversor_conservador.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Perspective App</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html" onclick="loadSection('economy')">Volver a Inicio</a></li>
+            <!-- Nuevo enlace para el calendario económico -->
+            <li><a href="inversor_moderado.html">Inversor Moderado</a></li>
+            <li><a href="inversor_agresivo.html">Inversor Agresivo</a></li>
+            <li><a href="inversor_crypto.html">Inversor Crypto</a></li>
+        </ul>
+
+    <div class="container">
+        <h2>Información para el Inversor Conservador</h2>
+        <p>En esta sección encontrarás información y recursos relevantes para el inversor conservador.</p>
+        <p>A continuación, te presentamos algunos consejos y estrategias de inversión que podrían ser adecuados para tu perfil de inversor:</p>
+        <ul>
+            <li><a href="#">Diversifica tu cartera de inversión.</a></li>
+            <li><a href="#">Activos de bajo riesgo y alta liquidez.</a></li>
+            <li><a href="#">Considera inversiones en bonos o fondos.</a></li>
+            <li><a href="#">Consulta con un asesor.</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+    <button onclick="window.location.href = 'membresias.html';">Ver membresías</button>
+    </div>
+
+
+    <div class="container">
+    <h2>Rendimiento de la Cartera</h2>
+    <p>A continuación se muestra el rendimiento de la cartera del inversor conservador desde el 1 de enero de 2024 hasta la fecha actual.</p>
+    <canvas id="myChart" width="80vh" height="40vh"></canvas>
+    </div>
+    <div class="container">
+    <h2>Detalle de la Cartera</h2>
+    <p>A continuación se detallan los activos y empresas que componen la cartera del inversor conservador, junto con el porcentaje que representan en la cartera total.</p>
+    <table>
+        <thead>
+            <tr>
+    <td>Empresa A</td>
+    <td class="blurred">Empresa 1 (premium)</td>
+    <td>10%</td>
+    </tr>
+    <tr>
+    <td>Bono del Gobierno</td>
+    <td class="blurred">Empresa 2 (premium)</td>
+    <td>15%</td>
+    </tr>
+    <tr>
+    <td>Fondo Común de Inversión</td>
+    <td class="blurred">Empresa 3 (premium)</td>
+    <td>8%</td>
+    </tr>
+    <tr>
+    <td>Acciones de Tecnología</td>
+    <td class="blurred">Empresa 4 (premium)</td>
+    <td>12%</td>
+    </tr>
+    <tr>
+    <td>Bono Corporativo</td>
+    <td class="blurred">Empresa 5 (premium)</td>
+    <td>7%</td>
+    </tr>
+    <tr>
+    <td>Fondo de Bonos Municipales</td>
+    <td class="blurred">Empresa 6 (premium)</td>
+    <td>11%</td>
+    </tr>
+    <tr>
+    <td>Acciones de Energía Renovable</td>
+    <td class="blurred">Empresa 7 (premium)</td>
+    <td>9%</td>
+    </tr>
+    <tr>
+    <td>Bono del Tesoro</td>
+    <td class="blurred">Empresa 8 (premium)</td>
+    <td>14%</td>
+    </tr>
+    <tr>
+    <td>Fondo de Inversión en Materias Primas</td>
+    <td class="blurred">Empresa 9 (premium)</td>
+    <td>5%</td>
+    </tr>
+    <tr>
+    <td>Acciones de Industria</td>
+    <td class="blurred">Empresa 10 (premium)</td>
+    <td>9%</td>
+    </tr>
+
+
+        </tbody>
+    </table>
+</div>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Perspective App</p>
+    </footer>
+    <script src="inversor_conservador.js" defer></script>
+</body>
+</html>

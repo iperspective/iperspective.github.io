@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="salud.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="salud.js"></script>
+    <title>Perspective App - Datos de Salud</title>
+</head>
+
+<body>
+    <header>
+        <h1>Perspective App</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+
+            <li><a href="index.html">Volver a Inicio</a></li>
+            <li><button onclick="scrollToSection('salud')">Esperanza de Vida al Nacer</button></li>
+            <li><button onclick="scrollToSection('maternalDeaths')">Número de Muertes Maternas</button></li>
+            <li><button onclick="scrollToSection('drinkingWater')">Personas que utilizan Servicios de Agua Potable Gestionados de Forma Segura</button></li>
+
+        </ul>
+    </nav>
+    <main>
+        <section id="salud" class="container">
+            <div class="info-container">
+            <h2>Esperanza de Vida al Nacer</h2>
+                <p>Este gráfico muestra la esperanza de vida al nacer en diferentes regiones del mundo para el año 2022. Puedes explorar los datos y obtener más información mediante la visualización interactiva.</p>
+            <iframe src="https://ourworldindata.org/grapher/life-expectancy-at-different-ages" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+            <div class="info-container">
+                
+            </div>
+        </section>
+
+        <div class="space"></div>
+
+        <section id="medianAgeSection" class="container">
+            <div class="info-container">
+            <h2>Edad Mediana</h2>
+            <p>
+            La edad mediana divide a la población en dos grupos iguales, con la misma cantidad de personas mayores y menores que ella. Las proyecciones futuras se basan en el escenario de fertilidad media de la ONU.
+            </p>
+            <iframe src="https://ourworldindata.org/grapher/median-age" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+            <div class="info-container">
+                
+            </div>
+        </section>
+
+        <div class="space"></div>
+
+        <section id="deathsByAgeSection" class="container">
+        <div class="info-container">
+        <h2>Número de Muertes por Edad</h2>
+        <p>
+            El número estimado de muertes en cada grupo de edad. Las estimaciones pueden ser inciertas para países con sistemas de registro vital deficientes.
+        </p>
+        <iframe src="https://ourworldindata.org/grapher/annual-deaths-by-age" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </div>
+        </section>
+
+        <div class="space"></div>
+
+    </main>
+    <button id="goToTopBtn" onclick="goToTop()">↑</button>
+    <footer>
+        <p>&copy; 2024 Perspective App</p>
+    </footer>
+    <script src="salud.js"></script>
+</body>
+
+</html>

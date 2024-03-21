@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIB - Perspective App</title>
+    <link rel="stylesheet" href="pib.css">
+</head>
+<body>
+    <header>
+        <h1>Perspective App</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html">Volver a Inicio</a></li>
+            <li><a href="society.html">Volver a Sociedad</a></li>
+            <li><button onclick="scrollToSection('pib')">PIB - Producto Interno Bruto</button></li>
+            <li><button onclick="scrollToSection('gdpGrowth')">GDP growth (annual %)</button></li>
+            <li><button onclick="scrollToSection('gdpByRegion')">Gross domestic product (GDP) by world region</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="pib" class="container">
+            <h2>PIB - Producto Interno Bruto</h2>
+            
+            <div class="info-container">
+                <p>Este gráfico muestra el Producto Interno Bruto (PIB) de diferentes países en términos de su valor monetario. Utiliza datos proporcionados por el Banco Mundial.</p>
+                <iframe src="https://data.worldbank.org/share/widget?indicators=NY.GDP.MKTP.CD&intcid=ecr_hp_BeltC_en_ext&view=map" width='100%' height='500px' frameBorder='0' scrolling="no"></iframe>
+            </div>
+        </section>
+
+        <div class="space"></div>
+
+        <section id="globalGdp" class="container">
+            <h2>Global GDP over the long run</h2>
+            
+            <div class="info-container">
+                <p>Total output of the world economy. These historical estimates of GDP are adjusted for inflation.</p>
+                <iframe src="https://ourworldindata.org/grapher/global-gdp-over-the-long-run?time=earliest..2021" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+            </div>
+        </section>
+
+        <div class="space"></div>
+
+        <section id="gdpByRegion" class="container">
+            <h2>Gross domestic product (GDP) by world region</h2>
+            
+            <div class="info-container">
+                <p>Este gráfico muestra el Producto Interno Bruto (PIB) por región del mundo. Los datos están ajustados por inflación y diferencias en el costo de vida entre países.</p>
+                <iframe src="https://ourworldindata.org/grapher/gdp-world-regions-stacked-area" loading="lazy" style="width: 100%; height:700px; border: 0px none;"></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <button id="goToTopBtn" onclick="goToTop()">↑</button>
+        <p>&copy; 2024 Perspective App</p>
+    </footer>
+    <script src="pib.js"></script>
+</body>
+</html>

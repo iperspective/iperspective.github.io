@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crimen_justicia.css">
+    <script src="crimen_justicia.js" defer></script>
+    <title>Perspective App - Crimen y Justicia</title>
+</head>
+
+<body>
+    <header>
+        <h1>Perspective App</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html">Volver a Inicio</a></li>
+            <li><a href="society.html">Volver a Sociedad</a></li>
+            <li><button onclick="scrollToSection('deathsInWars')">Muertes en Guerras</button></li>
+            <li><button onclick="scrollToSection('militaryExpenditure')">Gasto Militar como Proporción del PIB</button></li>
+            <li><button onclick="scrollToSection('homicideRate')">Tasa de Homicidios</button></li>
+            <li><button onclick="scrollToSection('nuclearWarheadStockpiles')">Existencias Estimadas de Cabezas Nucleares</button></li>
+            <li><button onclick="scrollToSection('policeOfficers')">Agentes de Policía por cada 1,000 personas</button></li>
+            <li><button onclick="scrollToSection('terroristAttacks')">Número de Ataques Terroristas, 2021</button></li>
+            <li><button onclick="scrollToSection('terroristAttacksByMethod')">Ataques Terroristas por Método, Mundo, 2021</button></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="deathsInWars" class="container">
+            <div class="info-container">
+                <h2>Muertes en Guerras, Mundo</h2>
+                <p>Se incluyen las muertes de combatientes debido a enfrentamientos en guerras interestatales y civiles que estaban en curso ese año.</p>
+            </div>
+            <iframe src="https://ourworldindata.org/grapher/deaths-in-wars-project-mars" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </section>
+
+        <div class="space"></div>
+
+        <section id="militaryExpenditure" class="container">
+            <div class="info-container">
+                <h2>Gasto Militar como Proporción del PIB, 2020</h2>
+                <p>Los gastos militares incluyen personal militar y civil, operaciones y mantenimiento, adquisiciones, investigación y desarrollo militar, y ayuda militar. Se excluyen la defensa civil y los gastos actuales de actividades militares anteriores.</p>
+            </div>
+            <iframe src="https://ourworldindata.org/grapher/military-expenditure-share-gdp" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </section>
+
+        <div class="space"></div>
+
+        <section id="homicideRate" class="container">
+            <div class="info-container">
+                <h2>Tasa de Homicidios, 2021</h2>
+                <p>Número anual de muertes por homicidio por cada 100,000 personas.</p>
+            </div>
+            <iframe src="https://ourworldindata.org/grapher/homicide-rate-unodc" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </section>
+
+        <div class="space"></div>
+
+        <section id="nuclearWarheadStockpiles" class="container">
+            <div class="info-container">
+                <h2>Existencias Estimadas de Cabezas Nucleares</h2>
+                <p>Las existencias incluyen cabezas nucleares asignadas a las fuerzas militares, pero excluyen las cabezas nucleares retiradas en cola para desmantelamiento. Estas últimas solo se incluyen en el total global.</p>
+            </div>
+            <iframe src="https://ourworldindata.org/grapher/nuclear-warhead-stockpiles-lines" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </section>
+
+        <div class="space"></div>
+
+        <section id="policeOfficers" class="container">
+            <div class="info-container">
+                <h2>Agentes de Policía por cada 1,000 personas, 2015</h2>
+                <p>Número de agentes de policía por cada 1,000 personas en el año 2015.</p>
+            </div>
+            <iframe src="https://ourworldindata.org/grapher/police-officers-per-1000-people" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </section>
+
+        <div class="space"></div>
+
+        <section id="terroristAttacks" class="container">
+            <div class="info-container">
+                <h2>Número de Ataques Terroristas, 2021</h2>
+                <p>Número de ataques terroristas registrados en el año 2021.</p>
+            </div>
+            <iframe src="https://ourworldindata.org/grapher/terrorist-attacks-by-method" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </section>
+
+        <div class="space"></div>
+
+        <section id="terroristAttacksByMethod" class="container">
+            <div class="info-container">
+                <h2>Ataques Terroristas por Método, Mundo, 2021</h2>
+                <p>Número de ataques terroristas por el método principal utilizado por los perpetradores.</p>
+            </div>
+            <iframe src="https://ourworldindata.org/grapher/terrorist-attacks-by-method" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </section>
+
+
+    </main>
+    <footer>
+        <button id="goToTopBtn" onclick="goToTop()">↑</button>
+        <p>&copy; 2024 Perspective App</p>
+    </footer>
+</body>
+
+</html>

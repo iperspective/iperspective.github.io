@@ -1,0 +1,59 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ocupa todo el alto de la ventana */
+    background-color: #f0f0f0;
+}
+
+header, footer {
+    background-color: #ff6666;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.membresias-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.membresia-card {
+    width: 30vh; /* Ancho de cada tarjeta */
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.membresia-card:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.membresia-card h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.membresia-card p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.membresia-card ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* Estilos para el footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
