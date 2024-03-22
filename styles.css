@@ -16,7 +16,6 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Efecto de fundido */
 .fade-in {
     opacity: 1;
     transition: opacity 0.3s ease;
@@ -122,7 +121,8 @@ nav ul {
 }
 
 nav ul li {
-    margin: 5px;
+    margin: 12px;
+
 }
 
 nav ul li a {
@@ -175,6 +175,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 240px;
     width: 100%;
 }
 
@@ -205,8 +206,8 @@ nav {
 }
 
 #destacados-container {
-    max-width: 80%;
-    width: 80%;
+    max-width: 90%;
+    width: 90%;
     height: 50vh;
     margin: 20px auto;
     margin-top: 10px;
@@ -214,14 +215,14 @@ nav {
 }
 
 .destacado {
-    background-color: rgba(255, 102, 102, 0.8); /* Rojo pastel más oscuro con transparencia */
+    background-color: rgba(255, 102, 102, 0.8);
     color: #fff;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 5px;
-    display: flex; /* Usa flexbox para alinear elementos */
-    justify-content: space-between; /* Alinea los elementos al inicio y al final del contenedor */
-    align-items: center; /* Centra verticalmente los elementos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .destacado h3 {
@@ -229,40 +230,37 @@ nav {
 }
 
 .destacado p {
-    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+    margin-bottom: 10px;
 }
 
-/* Estilos para el botón dentro de la sección destacada */
 .destacado a {
-    height: 10vh;
+    height: 15vh;
     display: inline-block;
-    padding: 10px 15px;
-    background-color: #ffe6e6; /* Rojo pastel */
-    color: #ff6666; /* Tono verde más oscuro para el texto del botón */
+    padding: 10px 5px;
+    background-color: #ffe6e6; 
+    color: #ff6666; 
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .destacado a:hover {
-    background-color: #ecf0f1; /* Cambio de color al pasar el ratón sobre el botón */
+    background-color: #ecf0f1;
 }
 
-
-/* Estilos para el botón dentro de la sección destacada */
 .button-destacado {
     display: inline-block;
     height: 2vh;
     padding: 10px 15px;
     background-color: #fff;
-    color: #2ecc71; /* Tono verde más oscuro para el texto del botón */
+    color: #2ecc71; 
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .button-destacado:hover {
-    background-color: #ecf0f1; /* Cambio de color al pasar el ratón sobre el botón */
+    background-color: #ecf0f1;
 }
 
 
@@ -280,7 +278,7 @@ footer {
     display: inline-block;
     margin-top: 5px;
     padding: 10px 15px;
-    background-color: #ff6666; /* Rojo pastel */
+    background-color: #ff6666; 
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -327,7 +325,7 @@ footer {
 #categorias-container {
     margin: 20px auto;
     text-align: center;
-    width: 80vw;
+    width: 100%;
 }
 
 .botones-categorias {
@@ -337,15 +335,15 @@ footer {
 }
 
 .boton-categoria {
-    width: 30vw; 
+    width: 70%; 
     height: 50px; 
-    padding: 10px 20px; 
+    padding: 10px 10px; 
     background-color: rgba(255, 102, 102, 0.8);
     color: #fff;
     border: none;
-    font-size: 1.8vh; 
+    font-size: 1.5vh; 
     border-radius: 5px;
-    margin: 0 20px; 
+    margin: 0 5px; 
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -358,9 +356,9 @@ footer {
     display: none;
     position: absolute;
     flex-direction: column;
-    font-size: 1.5vh; 
+    font-size: 1.2vh; 
     align-items: center;
-    width: 17vw;
+    width: 20%;
     margin: 0 auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     background-color: lightcoral;
@@ -390,7 +388,6 @@ footer {
     opacity: 1;
 }
 
-
 .fade-in {
     animation: fadeIn 0.2s ease;
 }
@@ -406,39 +403,37 @@ footer {
     }
 }
 
-/* Estilos responsivos */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
-        align-items: center; /* Alinea los elementos al centro */
+        flex-direction: column;
+        align-items: center;
     }
 
     nav ul {
         margin: 20px 10px;
-        margin-top: 10px; /* Espacio entre la barra de navegación y las opciones */
+        margin-top: 10px;
         
     }
 
     nav li {
-        margin: 20px 10px; /* Espacio vertical entre las opciones */
-        text-align: center; /* Alinea el texto al centro */
+        margin: 20px 10px;
+        text-align: center;
     }
 }
 
-/* Estilos para pantallas pequeñas */
 @media (max-width: 480px) {
     nav {
-        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
-        align-items: center; /* Alinea los elementos al centro */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     nav ul {
-        margin-top: 10px; /* Espacio entre la barra de navegación y las opciones */
+        margin-top: 10px; 
        
     }
     nav li {
-        margin: 8px 0; /* Ajusta el espacio vertical entre las opciones para pantallas aún más pequeñas */
-        font-size: 14px; /* Ajusta el tamaño de fuente para mejorar la legibilidad */
+        margin: 8px 0;
+        font-size: 14px;
     }
 }
 

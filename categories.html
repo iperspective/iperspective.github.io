@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías - Perspective App</title>
+    <link rel="stylesheet" href="categories.css">
+</head>
+<body>
+
+    <header>
+        <h1>Perspective App</h1>
+    </header>
+    <nav>
+       <ul id="mainNav">
+            <li><a href="index.html">Volver a Inicio</a></li>
+        </ul>
+    </nav>
+
+    <main>
+    <h2>Categorías</h2>
+    <ul class="categories-list">
+        <li class="category" data-target="society">Sociedad</li>
+        <div id="subcategories-container-society" class="subcategories-container">
+            <ul class="society-categories"> 
+            <li><a href="derechos_humanos.html">Derechos Humanos y Libertades Civiles</a></li>
+            <li><a href="salud.html">Salud</a></li>
+            <li><a href="alfabetizacion.html">Educación</a></li>
+            <li><a href="pobreza.html">Pobreza</a></li>
+            <li><a href="crimen_justicia.html">Crimen y Justicia</a></li>
+            <li><a href="medio_ambiente.html">Medio Ambiente y Sostenibilidad</a></li>
+            <li><a href="migracion_refugio.html">Migración y Refugio</a></li>
+            <li><a href="cultura_diversidad.html">Cultura y Diversidad</a></li>
+            <li><a href="tecnologia_sociedad.html">Tecnología y Sociedad Digital</a></li>
+            <li><a href="familia_sociedad.html">Familia y Sociedad</a></li>
+            </ul>
+        </div>
+
+        <li class="category" data-target="technology">Tecnología</li>
+        <div id="subcategories-container-technology" class="subcategories-container">
+            <ul>
+                <li><a href="informatica.html">Informática</a></li>
+                <li><a href="electronica.html">Electrónica</a></li>
+                <li><a href="ia.html">Inteligencia Artificial</a></li>
+            </ul>
+        </div>
+
+        <li class="category" data-target="economy">Economía</li>
+        <div id="subcategories-container-economy" class="subcategories-container">
+            <ul>
+                <li><a href="finanzas.html">Finanzas</a></li>
+                <li><a href="comercio.html">Comercio</a></li>
+                <li><a href="inversiones.html">Inversiones</a></li>
+            </ul>
+        </div>
+    </ul>
+
+    <button id="toggleButton">Ocultar Subcategorías</button>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Perspective App</p>
+    </footer>
+
+    <script src="categories.js"></script>
+</body>
+</html>
