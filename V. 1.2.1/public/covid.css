@@ -1,0 +1,176 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    background-color: #fff;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #45a049;
+}
+
+.button {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #3498db; /* Cambiado a azul */
+    color: #fff;
+    width: 30vh;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block; /* Hace que el botón sea un bloque para ajustar el ancho */
+    margin: 20px auto; /* Centra el botón horizontalmente y le agrega espacio superior e inferior */
+}
+
+.button:hover {
+    background-color: #2980b9; /* Cambio de color al pasar el mouse */
+}
+
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#content-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ecf0f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#covidChartContainer {
+    margin-top: 20px;
+}
+
+/* Estilos específicos para el gráfico */
+#covidChart {
+    width: 100%;
+    height: 400px;
+}
+
+/* Media queries para hacer el diseño más responsive */
+@media only screen and (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.graph-section iframe {
+    width: 100%;
+    height: 600px;
+    border: 0 none;
+}
+
+
+.graph-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.graph-section iframe {
+    width: 100%;
+    height: 600px;
+    border: 0 none;
+}
+
+.graph-section p {
+    margin-top: 20px;
+}
+
+/* Estilos para la tabla de estadísticas por país */
+#countries table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#countries th, #countries td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#countries th {
+    background-color: #f2f2f2;
+}
+
+/* Agrega un estilo para resaltar la primera fila (encabezados) */
+#countries th:first-child, #countries td:first-child {
+    border-left: 2px solid #4CAF50;
+}
+
+/* Agrega un estilo para resaltar la última columna (total) */
+#countries th:last-child, #countries td:last-child {
+    border-right: 2px solid #4CAF50;
+}
+
+/* Estilos adicionales para mejorar la legibilidad y apariencia */
+#countries tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#countries tbody tr:hover {
+    background-color: #e0f7fa; /* Cambia el color al pasar el mouse */
+}
+

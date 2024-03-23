@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="economy_gob.css">
+    <script type="module" src="economy_gob.js" defer></script>
+    <title>Gasto del Gobierno</title>
+</head>
+
+<body>
+    <header>
+        <h1>Perspective App</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html">Volver a Inicio</a></li>
+            <li><a href="economy.html">Volver a Economía</a></li>
+            <li><button onclick="scrollToSection('government-spending')">Gasto del Gobierno</button></li>
+            <li><button onclick="scrollToSection('social-spending')">Gasto social como porcentaje del PIB</button></li>
+            <li><button onclick="scrollToSection('government-outsourcing')">Gasto del gobierno en externalización</button></li>
+        </ul>
+    </nav>
+    <main>
+        
+        <section id="government-spending" class="container">
+            <div class="info-container">
+                <h2>Gasto del Gobierno, 2011</h2>
+                <p>Gasto total del gobierno, incluidos los gastos gubernamentales de intereses, como parte del PIB nacional.</p>
+                <iframe src="https://ourworldindata.org/grapher/historical-gov-spending-gdp" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+            </div>
+        </section>
+
+        <section id="social-spending" class="container">
+            <div class="info-container">
+                <h2>Gasto social como porcentaje del PIB, 1880 a 2016</h2>
+                <p>El gasto social incluye, entre otros, las siguientes áreas: salud, vejez, beneficios relacionados con la incapacidad, familia, programas activos del mercado laboral, desempleo y vivienda.</p>
+                <iframe src="https://ourworldindata.org/grapher/social-spending-oecd-longrun" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+            </div>
+        </section>
+
+        <section id="government-outsourcing" class="container">
+            <div class="info-container">
+                <h2>Gasto del gobierno en externalización como parte del PIB</h2>
+                <p>La externalización del gobierno incluye bienes y servicios utilizados por los gobiernos (por ejemplo, servicios de contabilidad o TI), así como bienes y servicios externalizados financiados por el gobierno (por ejemplo, tratamientos médicos).</p>
+                <iframe src="https://ourworldindata.org/grapher/oecd-expenditures-on-government-outsourcing-gdp" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Perspective App</p>
+    </footer>
+    <script src="economy_gob.js"></script>
+</body>
+
+</html>

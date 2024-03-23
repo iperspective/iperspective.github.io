@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pobreza.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="pobreza.js"></script>
+    <title>Perspective App - Datos de Pobreza</title>
+</head>
+
+<body>
+    <header>
+        <h1>Perspective App</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html">Volver a Inicio</a></li>
+            <li><button onclick="scrollToSection('pobrezaIframe')">Proporción de la población que vive en extrema pobreza</button></li>
+            <li><button onclick="scrollToSection('extremePoverty')">Número de Personas que Viven en Pobreza Extrema por Región</button></li>
+            <li><button onclick="scrollToSection('distribucionPobreza')">Distribución de la población entre diferentes umbrales de pobreza</button></li>
+        </ul>
+    </nav>
+    <main>
+
+        <section id="pobrezaIframe" class="container">
+        <div class="info-container">
+        <h2>Proporción de la población que vive en extrema pobreza, 2019</h2>
+        <p>La extrema pobreza se define como vivir por debajo de la Línea Internacional de Pobreza de $2.15 por día. Estos datos están ajustados por inflación y por diferencias en el costo de vida entre países.</p>
+        </div>
+        <iframe src="https://ourworldindata.org/grapher/share-of-population-in-extreme-poverty" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </section>
+
+        <div class="space"></div>
+
+        <section id="extremePoverty" class="container">
+            <div class="info-container">
+            <h2>Número de Personas que Viven en Pobreza Extrema por Región</h2>
+                <p>Estos datos se calculan en función de un enfoque de 'costo de necesidades básicas'. Representa el número de personas que no pueden satisfacer las necesidades básicas (incluyendo nutrición mínima y refugio adecuadamente calefaccionado) según los precios de bienes y servicios disponibles localmente en ese momento.</p>
+            <iframe id="extremePoverty" class="extremePoverty" src="https://ourworldindata.org/grapher/number-of-people-living-in-extreme-poverty-by-region-cbn" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </section>
+
+        <div class="space"></div>
+
+        <section id="distribucionPobreza" class="container">
+        <div class="info-container">
+        <h2>Distribución de la población entre diferentes umbrales de pobreza, Mundo, 1820 a 2018</h2>
+        <p>Estos datos están ajustados por inflación y por diferencias en el costo de vida entre países. Los datos posteriores a 1981 se relacionan con encuestas de ingresos o consumo de hogares recopiladas por el Banco Mundial; antes de 1981 se basan en reconstrucciones históricas del PIB per cápita y datos de desigualdad.</p>
+        </div>
+        <iframe src="https://ourworldindata.org/grapher/distribution-of-population-between-different-poverty-thresholds-historical" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </section>
+
+
+    </main>
+    <footer>
+        <button id="goToTopBtn" onclick="goToTop()">↑</button>
+        <p>&copy; 2024 Perspective App</p>
+    </footer>
+    <script src="pobreza.js"></script>
+</body>
+
+</html>

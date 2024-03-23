@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crypto.css">
+    <title>Perspective App - Crypto</title>
+    <script src="https://widgets.coingecko.com/coingecko-coin-heatmap-widget.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Perspective App - Crypto</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="crypto.html">Crypto</a></li>
+            <li><a href="bitcoin.html">Bitcoin</a></li>
+            <li><a href="ethereum.html">Ethereum</a></li>
+        </ul>
+    </nav>
+    <main>
+        
+        <section id="crypto-content" class="content-container">
+            
+            <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-5" lcw-base="USD" lcw-color-tx="#000000" lcw-marquee-1="coins" lcw-marquee-2="movers" lcw-marquee-items="10" ></div>
+
+        </section>
+
+            <section>
+            <coingecko-coin-heatmap-widget height="400" width="100%" locale="es"></coingecko-coin-heatmap-widget>
+            <section>
+
+            <section>
+                <h2>Market Cap</h2>
+                <canvas id="totalMarketCapChart" width="800" height="400"></canvas>
+                <div id="totalMarketCapDetails"></div>
+            </section>
+
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+              {
+              "symbols": [
+                [
+                  "CRYPTOCAP:TOTAL|1D"
+                ],
+                [
+                  "CRYPTOCAP:TOTAL3|1D"
+                ],
+                [
+                  "CRYPTOCAP:TOTALDEFI|1D"
+                ]
+              ],
+              "chartOnly": false,
+              "width": "100%",
+              "height": 400,
+              "locale": "en",
+              "colorTheme": "light",
+              "autosize": false,
+              "showVolume": false,
+              "showMA": false,
+              "hideDateRanges": false,
+              "hideMarketStatus": false,
+              "hideSymbolLogo": false,
+              "scalePosition": "right",
+              "scaleMode": "Normal",
+              "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+              "fontSize": "10",
+              "noTimeScale": false,
+              "valuesTracking": "1",
+              "changeMode": "price-and-percent",
+              "chartType": "area",
+              "maLineColor": "#2962FF",
+              "maLineWidth": 1,
+              "maLength": 9,
+              "lineWidth": 2,
+              "lineType": 0,
+              "dateRanges": [
+                "1d|1",
+                "1m|30",
+                "3m|60",
+                "12m|1D",
+                "60m|1W",
+                "all|1M"
+              ],
+              "lineColor": "rgba(41, 98, 255, 1)"
+            }
+              </script>
+            </div>
+
+            <section>
+            <script src="https://widgets.coingecko.com/coingecko-coin-compare-chart-widget.js"></script>
+            <coingecko-coin-compare-chart-widget  coin-ids="bitcoin,ethereum,litecoin,ripple" currency="usd" locale="es"></coingecko-coin-compare-chart-widget>
+            </section>
+
+            <section>
+                <h2>Volumen de Transacciones - Gráfico Barras</h2>
+                <canvas id="transactionVolumeChart" width="100%" height="400"></canvas>
+                <div id="transactionVolumeDetails"></div>
+            </section>
+
+            <section>
+            <h2>Volumen de Transacciones - Gráfico Líneas</h2>
+            <canvas id="transactionVolumeChart2" width="100%" height="400"></canvas>
+            <div id="transactionVolumeDetails2"></div>
+            </section>
+
+
+            </section>
+            <script src="https://widgets.coingecko.com/coingecko-coin-list-widget.js"></script>
+            <coingecko-coin-list-widget  coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd" locale="es"></coingecko-coin-list-widget>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Perspective App - Crypto</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="crypto.js" defer></script>
+</body>
+
+</html>

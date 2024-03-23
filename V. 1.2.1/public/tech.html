@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tech.css">
+    <script type="module" src="tech.js" defer></script>
+    <title>Tecnología</title>
+</head>
+
+<body>
+    <header>
+        <h1>Perspective App</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html">Volver a Inicio</a></li>
+            <li><button onclick="scrollToSection('tech')">Adopción de tecnologías</button></li>
+            <li><button onclick="scrollToSection('internet-usage')">Uso de Internet en la población</button></li>
+            <li><button onclick="scrollToSection('supercomputer-power')">Capacidad computacional</button></li>
+            <li><button onclick="scrollToSection('mobile-money-accounts')">Cuentas activas de dinero móvil</button></li>
+            
+        </ul>
+    </nav>
+    <main>
+        
+        <section id="tech" class="container">
+            
+            <div class="info-container">
+                <h2>Adopción de tecnologías de comunicación a nivel mundial</h2>
+                <p>Esta visualización muestra la adopción de tecnologías de comunicación en todo el mundo. Los datos provienen de la Unión Internacional de Telecomunicaciones a través del Banco Mundial. Ten en cuenta que las suscripciones a Internet por línea fija se definen como un acceso fijo a Internet con una velocidad de descarga de al menos 256 kbit/s. Los usuarios de Internet son personas que han accedido a Internet desde cualquier ubicación en los últimos tres meses.</p>
+                <iframe src="https://ourworldindata.org/grapher/ict-adoption" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+            </div>
+        </section>
+
+        <section id="internet-usage" class="container">
+        
+        <div class="info-container">
+            <h2>Uso de Internet en la población</h2>
+            <p>Este gráfico muestra el porcentaje de la población que ha utilizado Internet en los últimos tres meses. Proporciona una perspectiva sobre la penetración de Internet en diferentes regiones del mundo y su evolución a lo largo del tiempo.</p>
+            <iframe src="https://ourworldindata.org/grapher/share-of-individuals-using-the-internet" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </div>
+        </section>
+
+        <section id="supercomputer-power" class="container">
+        
+        <div class="info-container">
+            <h2>Capacidad computacional de los supercomputadores más rápidos</h2>
+            <p>Este gráfico muestra la capacidad computacional, expresada en gigaflops, de los supercomputadores más rápidos en cualquier año dado. Representa el número de operaciones en punto flotante realizadas por segundo por el supercomputador más rápido en el año respectivo.</p>
+            <iframe src="https://ourworldindata.org/grapher/supercomputer-power-flops" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </div>
+        </section>
+
+        <section id="mobile-money-accounts" class="container">
+        
+        <div class="info-container">
+            <h2>Cuentas activas de dinero móvil</h2>
+            <p>Este gráfico muestra el número de cuentas de clientes que se han utilizado para realizar al menos un pago de dinero móvil durante los últimos 90 días de cada año.</p>
+            <iframe src="https://ourworldindata.org/grapher/active-mobile-money-accounts" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </div>
+        </section>
+        
+    </main>
+    <footer>
+        <button id="goToTopBtn" onclick="goToTop()">↑</button>
+        <p>&copy; 2024 Perspective App</p>
+    </footer>
+    <script src="tech.js"></script>
+</body>
+
+</html>

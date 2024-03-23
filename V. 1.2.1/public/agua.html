@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agua.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="agua.js"></script>
+    <title>Perspective App - Acceso a Agua Potable</title>
+</head>
+
+<body>
+    <header>
+        <h1>Perspective App</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html" onclick="loadSection('agua')">Volver a Inicio</a></li>
+            <li><button onclick="scrollToSection('agua')">Acceso a agua potable</button></li>
+            <li><button onclick="scrollToSection('safely-managed-water')">Porcentaje de la población utilizando agua potable</button></li>
+            <li><button onclick="scrollToSection('drinking-water-facilities')">Instalaciones de agua potable</button></li>
+        </ul>
+    </nav>
+    <main>
+
+        <section id="agua" class="container">
+            <div class="info-container">
+                <h2>Acceso a agua potable a través de mapas</h2>
+                <p>Este mapa muestra el acceso a agua potable utilizando datos geográficos. Puedes explorar los datos y obtener más información mediante la visualización interactiva del mapa.</p>
+            
+            <iframe id="waterIframe" class="waterIframe" src="https://datos.bancomundial.org/share/widget?end=2022&indicators=SH.H2O.BASW.ZS&start=2022&view=map&year=2022"  loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+            </div>
+        </section>
+
+        <div class="space"></div>
+
+        <section id="safely-managed-water" class="container">
+        <div class="info-container">
+         <h2>Porcentaje de la población utilizando agua potable gestionada de forma segura</h2>
+        <p>Un servicio de agua potable gestionado de forma segura se define como aquel ubicado en las instalaciones, disponible cuando se necesita y libre de contaminación.</p>
+        <iframe src="https://ourworldindata.org/grapher/proportion-using-safely-managed-drinking-water?tab=chart&country=~OWID_WRL" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </div>
+        </section>
+
+        <div class="space"></div>
+
+        <section id="drinking-water-facilities" class="container">
+        <div class="info-container">
+        <h2>Porcentaje de la población utilizando instalaciones de agua potable</h2>
+        <p>Este gráfico muestra el porcentaje de la población utilizando instalaciones de agua potable. Puedes explorar los datos y obtener más información mediante la visualización interactiva.</p>
+        <iframe src="https://ourworldindata.org/grapher/access-drinking-water-stacked" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </div>
+        </section>
+
+    </main>
+    <footer>
+        <button id="goToTopBtn" onclick="goToTop()">↑</button>
+        <p>&copy; 2024 Perspective App</p>
+    </footer>
+    <script src="agua.js"></script>
+</body>
+
+</html>
