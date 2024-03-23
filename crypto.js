@@ -118,3 +118,50 @@ function updateEthereumMarketCapChart(data) {
     const marketCaps = data.market_caps.map(entry => entry[1]);
     createChart(ctx, 'line', labels, marketCaps, 'Capitalización de Mercado de Ethereum (USD)');
 }
+
+
+function updateTransactionVolumeCharts(data1, data2) {
+    const ctx1 = document.getElementById('transactionVolumeChart1').getContext('2d');
+    const ctx2 = document.getElementById('transactionVolumeChart2').getContext('2d');
+    
+    const labels = data1.map(entry => entry.name);
+    
+    const volumes1 = data1.map(entry => entry.total_volume);
+    const volumes2 = data2.map(entry => entry.total_volume);
+    
+    createLineChart(ctx1, labels, volumes1, 'Volumen de Transacciones - Gráfico 1');
+    createLineChart(ctx2, labels, volumes2, 'Volumen de Transacciones - Gráfico 2');
+}
+
+function createLineChart(ctx, labels, data, label) {
+    return new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: label,
+                data: data,
+                backgroundColor: 'transparent',
+                borderColor: getRandomColor(),
+                borderWidth: 2,
+                pointRadius: 0
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+}
+
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}

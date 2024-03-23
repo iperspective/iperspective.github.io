@@ -26,10 +26,11 @@
         <section id="crypto-content" class="content-container">
             
             <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-5" lcw-base="USD" lcw-color-tx="#000000" lcw-marquee-1="coins" lcw-marquee-2="movers" lcw-marquee-items="10" ></div>
+
         </section>
 
             <section>
-            <coingecko-coin-heatmap-widget height="400" locale="es"></coingecko-coin-heatmap-widget>
+            <coingecko-coin-heatmap-widget height="400" width="100%" locale="es"></coingecko-coin-heatmap-widget>
             <section>
 
             <section>
@@ -97,9 +98,15 @@
             </section>
 
             <section>
-                <h2>Volumen de Transacciones</h2>
-                <canvas id="transactionVolumeChart" width="800" height="400"></canvas>
+                <h2>Volumen de Transacciones - Gráfico Barras</h2>
+                <canvas id="transactionVolumeChart" width="100%" height="400"></canvas>
                 <div id="transactionVolumeDetails"></div>
+            </section>
+
+            <section>
+            <h2>Volumen de Transacciones - Gráfico Líneas</h2>
+            <canvas id="transactionVolumeChart2" width="100%" height="400"></canvas>
+            <div id="transactionVolumeDetails2"></div>
             </section>
 
 

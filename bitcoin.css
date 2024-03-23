@@ -29,9 +29,9 @@ nav {
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: background-color 0.3s ease; /* Transición en cambios de color */
+    transition: background-color 0.3s ease; 
     display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
+    justify-content: center;
     align-items: center;
 }
 
@@ -60,7 +60,7 @@ nav a {
 
 .coinmarketcap-currency-widget-container {
     margin: 20px auto;
-    max-width: 80%;
+    max-width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;

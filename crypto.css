@@ -3,11 +3,13 @@ body {
     margin: 0;
     padding: 0;
     height: 3000px;
+    max-width: 100%;
     background-color: #f0f0f0;
 }
 
 main {
-    max-width: 80%;
+    max-width: 90%;
+    width: 900%;
     margin: 20px auto;
     padding: 1em;
     height: 3500px;
@@ -20,43 +22,83 @@ header {
     color: #fff;
     text-align: center;
     padding: 1em 0;
+    width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+    cursor: false;
 }
 
 nav {
-    background-color: #fff;
-    padding: 1em;
+    background-color: #ffe6e6;
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: background-color 0.3s ease; /* Transición en cambios de color */
+    transition: background-color 0.3s ease;
     display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 nav ul {
     list-style: none;
-    margin: 10px;
+    margin: 0;
+    width: 100%;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
-    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 12px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #6fb936;
 }
 
 nav li {
-    margin: 15px 10px; /* Ajuste aquí: margen superior e inferior de 10px, margen izquierdo y derecho de 10px */
+    margin: 20px 0; 
 }
 
 nav a {
     text-decoration: none;
     padding: 10px;
-    background-color: #ff6666;
+    width: 60%;
+    background-color: #4CAF50;
     color: #fff;
     margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* Transición en cambios de color */
+    transition: background-color 0.3s ease;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav {
+    animation: fadeInDown 0.5s ease;
 }
 
 #crypto-content {
@@ -71,6 +113,12 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        width: 52%;
+    }
 }
 
 #crypto-content button {
@@ -88,15 +136,11 @@ footer {
     background-color: #2980b9;
 }
 
-/* Estilos para secciones adicionales */
-
-/* Contenedor de gráficos pequeños y detalles */
 .small-chart-container {
     margin-top: 20px;
     text-align: center;
 }
 
-/* Estilos para detalles escritos debajo de los gráficos */
 .small-chart-container div {
     margin-top: 10px;
     font-size: 14px;
