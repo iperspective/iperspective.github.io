@@ -7,8 +7,9 @@ body {
 }
 
 main {
-    max-width: 80%;
-    margin: 20px auto;
+    width: 90%;
+    margin: 10px auto;
+    height: 380vh;
     padding: 1em;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -76,12 +77,12 @@ nav a:hover {
     background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 10px 20px;
+    padding: 8px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 10px 10px;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -98,9 +99,9 @@ nav a:hover {
 }
 
 #tech iframe {
-    width: 100%; /* Hace que el iframe ocupe el 100% del ancho del contenedor */
-    height: 600px; /* Altura fija del iframe */
-    margin-bottom: 10px; /* Agrega espacio inferior */
+    width: 100%;
+    height: 600px; 
+    margin-bottom: 10px;
 }
 
 

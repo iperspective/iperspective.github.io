@@ -12,30 +12,72 @@
     </header>
     <nav>
         <ul id="mainNav">
-            <!-- Puedes agregar elementos de navegación si es necesario -->
-        </ul>
-    
-        <a href="categorias" class="button">Ver más Categorías</a>
+        <li><a href="index.html">Volver a Inicio</a></li>
+        <li><button onclick="scrollToSection('sostenibilidad')">Calentamiento global</button></li>
+        <li><button onclick="scrollToSection('electricidad_renovable')">Generación de electricidad renovable</button></li>
+        <li><button onclick="scrollToSection('emisiones_anuales_co2')">Emisiones anuales de CO₂</button></li>
+        <li><button onclick="scrollToSection('generacion_renovable_fuente')">Generación de energía renovable moderna por fuente</button></li>
+        <li><button onclick="scrollToSection('emisiones_anuales_co2_pais')">Emisiones anuales de CO₂ por país</button></li>
+        <li><button onclick="scrollToSection('emisiones_acumuladas_co2')">Emisiones acumuladas de CO₂</button></li>
+    </ul>
     </nav>
     <main>
-    <!-- Contenido específico de la sección de Sostenibilidad Ambiental -->
-    <!-- Contenido específico de la sección de Sostenibilidad Ambiental -->
-<section id="sostenibilidad" class="container">
-    <iframe id="sostenibilidadIframe" style="width: 100%; height: 40vh;" frameborder='0' scrolling="no"></iframe>
+    
+        <div class="info-container">
+        <h2>Calentamiento global: anomalía de temperatura mensual</h2>
+        <p>La anomalía de temperatura combinada de la superficie terrestre y la superficie del agua del mar se da como la desviación de la media de 1951-1980. Descubre cómo la tecnología está siendo utilizada para abordar los desafíos ambientales y promover la sostenibilidad. Aquí puedes encontrar datos sobre indicadores ambientales relevantes y su evolución a lo largo del tiempo.</p>
+        </div>
+        <section id="sostenibilidad" class="container">
+            <iframe src="https://ourworldindata.org/explorers/climate-change?facet=none&Metric=Temperature+anomaly&Long-run+series=false&country=OWID_WRL~ATA~Gulkana+Glacier~Lemon+Creek+Glacier~OWID_NAM~South+Cascade+Glacier~Wolverine+Glacier~Hawaii~Arctic+Ocean&hideControls=true" title="Calentamiento global: anomalía de temperatura mensual" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </section>
 
-    <!-- Contenedor para la información -->
-    <div class="info-container">
-        <h2>Datos sobre la Sostenibilidad Ambiental</h2>
-        <p>Descubre cómo la tecnología está siendo utilizada para abordar los desafíos ambientales y promover la sostenibilidad. Aquí puedes encontrar datos sobre indicadores ambientales relevantes y su evolución a lo largo del tiempo.</p>
-    </div>
+        <div class="info-container">
+            <h2>Generación de electricidad renovable, Mundo</h2>
+            <p>Este gráfico muestra la generación de electricidad renovable a nivel mundial.</p>
+        </div>
+        <section id="electricidad_renovable" class="container">
+            <iframe src="https://ourworldindata.org/grapher/modern-renewable-energy-consumption" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </section>
 
-    <!-- Botón para explorar más -->
-    <a href="#" class="button-destacado">Explorar más</a>
-    <a href="index.html" class="button-destacado">Volver a Home</a>
+
+        <div class="info-container">
+            <h2>Emisiones anuales de CO₂</h2>
+            <p>Las emisiones de dióxido de carbono (CO₂) procedentes de los combustibles fósiles y la industria. El cambio en el uso de la tierra no está incluido.</p>
+        </div>
+        <section id="emisiones_anuales_co2" class="container">
+            <iframe src="https://ourworldindata.org/grapher/annual-co2-emissions-per-country?country=~OWID_WRL" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </section>
+
+        <div class="info-container">
+        <h2>Generación de energía renovable moderna por fuente, Mundo</h2>
+        <p>Este gráfico muestra la generación de energía renovable moderna por fuente a nivel mundial, medida en teravatios-hora.</p>
+        </div>
+        <section id="generacion_renovable_fuente" class="container">
+            <iframe src="https://ourworldindata.org/grapher/modern-renewable-prod" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </section>
+
+        <div class="info-container">
+            <h2>Emisiones anuales de CO₂ por país</h2>
+            <p>Las emisiones de dióxido de carbono (CO₂) anuales de los combustibles fósiles y la industria. El cambio en el uso de la tierra no está incluido.</p>
+        </div>
+        <section id="emisiones_anuales_co2_pais" class="container">
+            <iframe src="https://ourworldindata.org/grapher/annual-co2-emissions-per-country" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </section>
+
+        <div class="info-container">
+            <h2>Emisiones acumuladas de CO₂</h2>
+            <p>Suma acumulada de emisiones de CO₂ producidas por combustibles fósiles e industria desde el primer año de registro, medida en toneladas. El cambio en el uso de la tierra no está incluido.</p>
+        </div>
+        <section id="emisiones_acumuladas_co2" class="container">
+            <iframe src="https://ourworldindata.org/grapher/cumulative-co-emissions" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </section>
+
+
 </section>
 
    </main>
     <footer>
+        <button id="goToTopBtn" onclick="goToTop()">↑</button>
         <p>&copy; 2024 Perspective App</p>
     </footer>
     <script src="sostenibilidad.js"></script>

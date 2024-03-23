@@ -2,13 +2,13 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    height: 170vh;
+    height: 180vh;
     background-color: #f0f0f0;
 }
 
 .container {
-    max-width: 100vh;
-    width: 80vh;
+    max-width: 100%;
+    width: 90%;
     margin: 20px auto;
     padding: 1em;
     background-color: #fff;
@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #ff6666, #ff3333); /* Tonos rojos pastel */
+    background: linear-gradient(to right, #ff6666, #ff3333); 
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -25,23 +25,22 @@ header {
 }
 
 main {
-    max-width: 80vh;
+    max-width: 100%;
     margin: 10px auto;
-    width: 80vh;
+    width: 90%;
     height: 1800px;
     padding: 1em;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para el subtítulo h2 */
 h2.subtitulo {
-    font-weight: normal; /* Quitar negrita */
-    margin-top:; /* Ajustar el margen superior */
+    font-weight: normal; 
+    margin-top:; 
 }
 
 nav {
-    background-color: #ffe6e6; /* Rojo pastel */
+    background-color: #ffe6e6; 
     padding: 1em;
     margin: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -58,12 +57,12 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
-    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-wrap: wrap; 
+    justify-content: center; 
 }
 
 nav li {
-    margin: 20px 0; /* Ajuste aquí: margen superior e inferior de 10px, margen izquierdo y derecho de 10px */
+    margin: 20px 0; 
 }
 
 nav a {
@@ -74,7 +73,7 @@ nav a {
     margin: 5px;
     margin-top: 10px;
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* Transición en cambios de color */
+    transition: background-color 0.3s ease; 
 }
 
 h1 {
@@ -107,17 +106,15 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Estilos para el gráfico */
 #myChart {
     margin: 20px auto;
     display: block;
-    width: 80vh;
+    width: 80%;
     height: 20vh;
 }
 
-/* Estilos para la tabla */
 table {
-    width: 80vh;
+    width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
@@ -133,7 +130,7 @@ th {
 }
 
 .blurred {
-    filter: blur(4px); /* Aplica un desenfoque a las filas */
+    filter: blur(4px);
 }
 
 .container button {
@@ -153,7 +150,7 @@ th {
 
 
 footer {
-    background: linear-gradient(to right, #ff9999, #ff6666); /* Cambio a un gradiente en lugar de un color sólido */
+    background: linear-gradient(to right, #ff9999, #ff6666); 
     color: #fff;
     text-align: center;
     padding: 1em 0;

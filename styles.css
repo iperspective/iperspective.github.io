@@ -122,7 +122,6 @@ nav ul {
 
 nav ul li {
     margin: 12px;
-
 }
 
 nav ul li a {
@@ -435,6 +434,13 @@ footer {
         margin: 20px 10px;
         text-align: center;
     }
+    #menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 370px;
+    width: 100%;
 }
 
 @media (max-width: 480px) {
