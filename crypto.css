@@ -2,15 +2,16 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    height: 300vh;
+    height: 380vh;
     background-color: #f0f0f0;
 }
 
 main {
     width: 90%;
+    height: 300vh;
     margin: 20px auto;
     padding: 1em;
-    height: 300vh;
+    height: 350vh;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -45,7 +46,7 @@ nav {
 nav ul {
     list-style: none;
     margin: 0;
-    width: 100%;
+    width: 90%;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -120,7 +121,7 @@ footer {
 
 @media screen and (max-width: 768px) {
     footer {
-        width: 52%;
+        width: 100%;
     }
 }
 

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     getDataAndUpdateCharts();
-    setInterval(getDataAndUpdateCharts, 60000);
+    setInterval(getDataAndUpdateCharts, 5000);
 });
 
 async function getDataAndUpdateCharts() {

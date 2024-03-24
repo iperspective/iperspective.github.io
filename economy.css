@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    height: 120vh;
+    height: 150vh;
     background-color: #f0f0f0;
 }
 
@@ -45,8 +45,9 @@ nav a:hover {
 }
 
 main {
-    max-width: 800px;
+    max-width: 80%;
     margin: 20px auto;
+    height: 140vh;
     padding: 1em;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

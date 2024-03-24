@@ -33,12 +33,6 @@
             <coingecko-coin-heatmap-widget height="400" width="100%" locale="es"></coingecko-coin-heatmap-widget>
             <section>
 
-            <section>
-                <h2>Market Cap</h2>
-                <canvas id="totalMarketCapChart" width="800" height="400"></canvas>
-                <div id="totalMarketCapDetails"></div>
-            </section>
-
             <div class="tradingview-widget-container">
               <div class="tradingview-widget-container__widget"></div>
               <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
@@ -96,24 +90,20 @@
             <script src="https://widgets.coingecko.com/coingecko-coin-compare-chart-widget.js"></script>
             <coingecko-coin-compare-chart-widget  coin-ids="bitcoin,ethereum,litecoin,ripple" currency="usd" locale="es"></coingecko-coin-compare-chart-widget>
             </section>
+            </div>
 
-            <section>
-                <h2>Volumen de Transacciones - Gráfico Barras</h2>
-                <canvas id="transactionVolumeChart" width="100%" height="400"></canvas>
-                <div id="transactionVolumeDetails"></div>
-            </section>
-
-            <section>
-            <h2>Volumen de Transacciones - Gráfico Líneas</h2>
-            <canvas id="transactionVolumeChart2" width="100%" height="400"></canvas>
-            <div id="transactionVolumeDetails2"></div>
-            </section>
-
+            <div class='cr-widget' data-api-url: https://api.cryptorank.io data-site-url: https://cryptorank.io
+            data-currency='USD' data-type='all' data-roi='both' data-sort='ROI'
+            style='width: 100%; height: 750px;'><a target='_blank' rel='noopener' href='https://cryptorank.io/ieo-platforms-roi'>IEO Returns by Cryptorank</a></div><script src='https://cryptorank.io/widget/ieo-roi.js'></script>   
 
             </section>
             <script src="https://widgets.coingecko.com/coingecko-coin-list-widget.js"></script>
             <coingecko-coin-list-widget  coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd" locale="es"></coingecko-coin-list-widget>
             </section>
+
+            </section>
+
+            <div id="crypto_fear_calc" data-coins="" data-cards="" data-rss="" data-theme=" linear-gradient(90deg, rgba(0,121,189,1) 0%, rgba(0,0,113,1) 50%, rgba(0,121,189,1) 100%)" data-text="#ffffff" data-button="#0581de" data-vertical="false" data-coin="BTC" data-price="USD" data-crypto-amount="1" data-switch-mode="false" data-currency-amount="1" data-language="en"></div><script src="https://img.plasbit.com/widget/js/crypto-fear-calculator.js"></script>
 
         </section>
 
