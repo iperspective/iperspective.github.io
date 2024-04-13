@@ -2,6 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    height: 220vh;
     background-color: #f0f0f0;
 }
 
@@ -22,8 +23,8 @@ h2.subtitulo {
 
 main {
     width: 90%;
+    height: 600vh;
     margin: 10px auto;
-    height: 380vh;
     padding: 1em;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
