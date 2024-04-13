@@ -24,62 +24,62 @@ main {
 #popup-container {
     display: none;
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(104, 26, 61, 0.95);
+    color: #fff; 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+    overflow: auto;
+}
+
+.popup-slide {
+    display: none;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
     max-width: 80%;
-    height: 30vh;
-    background-color: rgba(255, 255, 255, 0.95);
-    color: #333;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 999;
+    background-color: #E6566B;
     border-radius: 10px;
+    padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.popup-slide {
-    display: none;
+    text-align: center;
 }
 
 .popup-slide h2 {
-    font-size: 24px;
-    margin-bottom: 40px;
-    margin-top: 120px;
-    text-align: center;
-    display: flex;
+    font-size: 2.2vh;
+    margin-bottom: 20px;
     font-weight: normal;
-    align-items: center;
-    justify-content: center;
-    height: 90%;
 }
 
 .popup-slide p {
-    font-size: 1em;
-    margin-bottom: 40px;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
 #popup-container button {
-    background-color: orangered;
+    background-color: #176F79;
     color: #fff;
-    width: 20vh;
-    height: 4vh;
-    font-size: 18px;
+    font-size: 2vh;
     font-weight: normal;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 40px;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
+    margin-top: 20px;
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 #popup-container button:hover {
     background-color: #2980b9;
 }
+
 
 header {
     background: linear-gradient(to right, #ff6666, #ff3333);
@@ -116,8 +116,8 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 10px;
-    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-top: 5px;
 }
 
 nav ul li {
@@ -126,7 +126,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 35px;
     background-color: #4CAF50;
     color: #fff;
     border-radius: 5px;
@@ -147,9 +147,9 @@ nav a {
     width: 60%;
     background-color: #4CAF50;
     color: #fff;
-    margin: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -446,16 +446,44 @@ footer {
 @media (max-width: 480px) {
     nav {
         flex-direction: column; 
-        align-items: center; 
+        align-items: center;
+        padding: 10px;
     }
 
     nav ul {
-        margin-top: 10px; 
-       
+        padding: 5px;
+        margin-top: 5px;
     }
+
     nav li {
-        margin: 8px 0;
-        font-size: 14px;
+        width: 80vw;
+        padding: 2px 0; 
+        margin: 5px 0; 
+        font-size: 2vh; 
+        text-align: center; 
+    }
+
+    #popup-container button {
+        width: 80%; 
+    }
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 320vh;
+    width: 100%;
+    background-color: #f0f0f0;
+    }
+
+    main {
+        width: 90%;
+        margin: 10px auto;
+        height: 275vh;
+        padding: 1em;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 }
+
+
 
