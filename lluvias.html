@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lluvias.css">
+    <title>Lluvias - Perspective App</title>
+</head>
+<body>
+    <header>
+        <h1>Perspective App</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html">Volver a Inicio</a></li>
+            <li><button onclick="scrollToSection('lluvias')">Lluvias</button></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="info-container">
+            <h2>Lluvias en tiempo real</h2>
+            <p>Observa el mapa de lluvias en tiempo real.</p>
+        </div>
+        
+        <div class="continent-buttons">
+            <button onclick="showCountries('america')">América</button>
+            <button onclick="showCountries('europa')">Europa</button>
+            <button onclick="showCountries('asia')">Asia</button>
+            <button onclick="showCountries('africa')">África</button>
+            <button onclick="showCountries('oceania')">Oceanía</button>
+        </div>
+        <div id="countryList" class="info-container hidden">
+            <h2>Países</h2>
+            <ul id="countryListItems"></ul>
+        </div>
+
+        <section id="lluvias" class="container">
+            <iframe id="weatherFrame" width="650" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=km/h&zoom=3&overlay=rain&product=ecmwf&level=surface&lat=-36.823&lon=-62.394&message=true" frameborder="0"></iframe>
+        </section>
+        
+    </main>
+
+    <footer>
+        <button id="goToTopBtn" onclick="goToTop()">↑</button>
+        <p>&copy; 2024 Perspective App</p>
+    </footer>
+    <script src="lluvias.js"></script>
+</body>
+</html>

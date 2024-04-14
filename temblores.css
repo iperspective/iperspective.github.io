@@ -1,8 +1,9 @@
+/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    height: 300vh;
+    height: 100vh;
     background-color: #f0f0f0;
 }
 
@@ -44,11 +45,11 @@ nav a:hover {
     background-color: #45a049;
 }
 
-
 main {
     max-width: 80%;
     margin: 20px auto;
     padding: 1em;
+    height: 90vh;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -71,27 +72,24 @@ main {
     background-color: #45a049;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    width: 100%;
-}
 
 .info-container {
-    padding: 10px;
-    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    width: 90%;
     background-color: #f9f9f9;
 }
 
 .info-container p {
     margin: 0;
+    padding: 20px;
+    margin-left: 0px;
     color: #333;
 }
 
 .info-container h2 {
     margin-top: 0;
+    margin-left: 0px;
     color: #4CAF50;
 }
 
@@ -115,7 +113,25 @@ main {
     background-color: #0056b3;
 }
 
-footer {
+.quake-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 0 auto; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.quake-container iframe {
+    width: 100%;
+    margin-top: 20px;
+    height: 52vh;
+    border: none;
+}
+
+.footer {
     background: linear-gradient(to right, #ff6666, #ff3333);
     color: #fff;
     text-align: center;

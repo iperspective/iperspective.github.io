@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="temblores.css">
+    <title>Temblores - Perspective App</title>
+</head>
+<body>
+    <header>
+        <h1>Perspective App</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html">Volver a Inicio</a></li>
+            <li><button onclick="scrollToSection('temblores')">Temblores</button></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="info-container">
+            <h2>Temblores Recientes</h2>
+            <p>Observa el mapa de temblores recientes en tiempo real.</p>
+        </div>
+        
+        <div class="quake-container">
+            <iframe id="VW_iframe" width="280px" height="200" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" src="https://earthquakes.volcanodiscovery.com?title=enlarged"></iframe>
+        </div>
+        
+    </main>
+
+    <footer>
+        <button id="goToTopBtn" onclick="goToTop()">↑</button>
+        <p>&copy; 2024 Perspective App</p>
+    </footer>
+    <script src="temblores.js"></script>
+</body>
+</html>

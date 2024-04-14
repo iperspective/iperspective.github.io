@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mareas.css">
+    <title>Mareas - Perspective App</title>
+</head>
+<body>
+    <header>
+        <h1>Perspective App</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html">Volver a Inicio</a></li>
+            <li><button onclick="scrollToSection('mareas')">Mareas</button></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="info-container">
+            <h2>Mareas en tiempo real</h2>
+            <p>Observa el mapa de mareas en tiempo real.</p>
+        </div>
+        
+        <div class="continent-buttons">
+            <button onclick="showRegions('atlanticoNorte')">Atlántico Norte</button>
+            <button onclick="showRegions('atlanticoSur')">Atlántico Sur</button>
+            <button onclick="showRegions('pacificoNorte')">Pacífico Norte</button>
+            <button onclick="showRegions('pacificoSur')">Pacífico Sur</button>
+            <button onclick="showRegions('indico')">Océano Índico</button>
+        </div>
+
+        <div id="regionList" class="info-container hidden">
+            <h2>Regiones Marítimas</h2>
+            <ul id="regionListItems">
+                <li><button class="region-btn" data-region="mediterraneo">Mar Mediterráneo</button></li>
+                <li><button class="region-btn" data-region="marCoral">Mar de Coral</button></li>
+                <li><button class="region-btn" data-region="marRojo">Mar Rojo</button></li>
+                <li><button class="region-btn" data-region="marNegro">Mar Negro</button></li>
+                <li><button class="region-btn" data-region="marBaltico">Mar Báltico</button></li>
+                <li><button class="region-btn" data-region="marCaspio">Mar Caspio</button></li>
+                <li><button class="region-btn" data-region="marArabico">Mar Arábigo</button></li>
+                <li><button class="region-btn" data-region="marCeltico">Mar Céltico</button></li>
+                <li><button class="region-btn" data-region="marCaspian">Mar Caspio</button></li>
+                <li><button class="region-btn" data-region="marCaribe">Mar Caribe</button></li>
+            </ul>
+        </div>
+
+        <section id="mareas" class="container">
+            <iframe id="mareasFrame" width="650" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=km/h&zoom=3&overlay=currents&product=cmems&level=surface&lat=-36.611&lon=-32.044" frameborder="0"></iframe>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <button id="goToTopBtn" onclick="goToTop()">↑</button>
+        <p>&copy; 2024 Perspective App</p>
+    </footer>
+    <script src="mareas.js"></script>
+</body>
+</html>

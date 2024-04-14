@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    height: 300vh;
+    height: 135vh;
     background-color: #f0f0f0;
 }
 
@@ -46,9 +46,10 @@ nav a:hover {
 
 
 main {
-    max-width: 80%;
+    max-width: 90%;
     margin: 20px auto;
     padding: 1em;
+    height: 100vh;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -76,22 +77,40 @@ main {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
-    width: 100%;
+    width: 100%; 
+    margin: 20px auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    height: 52vh;
+}
+
+.container iframe {
+    margin-top: 30px;
+    width: 90%;
+    height: 90%;
+    border: none; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .info-container {
-    padding: 10px;
-    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    width: 90%;
     background-color: #f9f9f9;
 }
 
 .info-container p {
     margin: 0;
+    padding: 20px;
+    margin-left: 20px;
     color: #333;
 }
 
 .info-container h2 {
     margin-top: 0;
+    margin-left: 20px;
     color: #4CAF50;
 }
 
@@ -113,6 +132,73 @@ main {
 
 #goToTopBtn:hover {
     background-color: #0056b3;
+}
+
+.continent-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 25vw;
+    margin: 0 auto;
+}
+
+.continent-buttons button {
+    margin: 0 2px;
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 10px;
+    font-size: 1.5vh;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.continent-buttons button:hover {
+    background-color: #45a049;
+}
+
+#countryList {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#countryList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+#countryList ul li {
+    margin-bottom: 10px;
+}
+
+#countryList h2 {
+    margin-top: 10px;
+}
+
+#countryList ul li a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#countryList ul li a:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
 }
 
 footer {
