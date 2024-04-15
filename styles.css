@@ -174,7 +174,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 100%;
 }
 
@@ -210,7 +210,7 @@ nav {
     height: 50vh;
     margin: 20px auto;
     margin-top: 10px;
-    margin-bottom: 120px;
+    margin-bottom: 210px;
 }
 
 .destacado {
@@ -420,9 +420,9 @@ footer {
 .tarjeta {
     background-color: rgba(0, 0, 122, 0.1);
     padding: 40px;
-    margin-top: 200px;
-    height: 15vh;
-    margin: 10 auto;
+    margin-top: 20px;
+    height: 6.5%;
+    margin: 0 auto;
     width: 80%;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -500,12 +500,12 @@ footer {
         text-align: center;
     }
     #menu-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
 }
 
 @media (max-width: 480px) {
@@ -532,20 +532,55 @@ footer {
         width: 80%; 
     }
     body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 320vh;
-    width: 100%;
-    background-color: #f0f0f0;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 350vh;
+        width: 100%;
+        background-color: #f0f0f0;
+    }
+
+    .tarjeta {
+        background-color: rgba(0, 0, 122, 0.1);
+        padding: 40px;
+        height: 6%;
+        margin: 0 auto;
+        width: 75%;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #destacados-container {
+        max-width: 100%;
+        width: 100%;
+        height: 50vh;
+        margin: 20px auto;
+        margin-top: 10px;
+        margin-bottom: 230px;
     }
 
     main {
         width: 90%;
         margin: 10px auto;
-        height: 275vh;
+        height: 305vh;
         padding: 1em;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .custom-button {
+        padding: 15px;
+        font-size: 2vh;
+        height: 5%;
+        border: none;
+        border-radius: 7px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
     }
 }

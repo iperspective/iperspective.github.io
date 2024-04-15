@@ -225,3 +225,124 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column; 
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    nav li {
+        width: 80vw;
+        padding: 2px 0; 
+        margin: 5px 0; 
+        font-size: 2vh; 
+        text-align: center; 
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 220vh;
+        width: 100%;
+        background-color: #f0f0f0;
+    }
+
+    main {
+        width: 90%;
+        margin: 10px auto;
+        height: 175vh;
+        padding: 1em;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .custom-button {
+        padding: 15px;
+        font-size: 2vh;
+        height: 5%;
+        border: none;
+        border-radius: 7px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .region-btn {
+        display: block;
+        margin-bottom: 0px;
+        margin-left: 10px;
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+        #regionList ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 100%; 
+        margin: 20px auto; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        overflow: hidden; 
+        height: 70vh;
+    }
+
+    .container iframe {
+        margin-top: 30px;
+        width: 90%;
+        height: 90%;
+        border: none; 
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+
+    #goToTopBtn {
+        position: fixed;
+        bottom: 100px;
+        right: 30px;
+        width: 4vh;
+        height: 4vh;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        font-size: 2.5vh;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        z-index: 9999;
+    }
+
+    #goToTopBtn:hover {
+        background-color: #0056b3;
+    }
+}

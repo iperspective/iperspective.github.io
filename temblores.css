@@ -46,7 +46,7 @@ nav a:hover {
 }
 
 main {
-    max-width: 80%;
+    max-width: 90%;
     margin: 20px auto;
     padding: 1em;
     height: 90vh;
@@ -131,7 +131,7 @@ main {
     border: none;
 }
 
-.footer {
+footer {
     background: linear-gradient(to right, #ff6666, #ff3333);
     color: #fff;
     text-align: center;
@@ -139,4 +139,60 @@ main {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column; 
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    nav li {
+        width: 80vw;
+        padding: 2px 0; 
+        margin: 5px 0; 
+        font-size: 2vh; 
+        text-align: center; 
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 130vh;
+        width: 100%;
+        background-color: #f0f0f0;
+    }
+
+    main {
+        width: 90%;
+        margin: 10px auto;
+        height: 125vh;
+        padding: 1em;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    .quake-container {
+        margin-top: 40px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        margin: 0 auto; 
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .quake-container iframe {
+        width: 100%;
+        margin-top: 20px;
+        height: 72vh;
+        border: none;
+    }
 }
