@@ -11,47 +11,66 @@
     <header>
         <h1>Membresías - Perspective App</h1>
     </header>
+
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html" onclick="loadSection('economy')">Volver a Inicio</a></li>
+            <li><a href="inversor_conservador.html">Inversor Conservador</a></li>
+            <li><a href="inversor_moderado.html">Inversor Moderado</a></li>
+            <li><a href="inversor_agresivo.html">Inversor Agresivo</a></li>
+            <li><a href="inversor_crypto.html">Inversor Crypto</a></li>
+            <li><a href="inversor_bienes.html">Inversor Bienes Raices</a></li>
+        </ul>
+    </nav>
     
     <div class="membresias-container">
-        <div class="membresia-card" onclick="mostrarDetalleMembresia('bronce')">
+
+        <div class="membresia-card bronce" onclick="mostrarDetallesMembresia('bronce')">
             <h2>Membresía Bronce</h2>
-            <p>Precio mensual: $X</p>
-            <p>Precio anual: $Y</p>
+            <p>Precio mensual: $20</p>
+            <p>Precio anual: <span id="precioAnualBronce">$240</span> (10% de descuento)</p>
             <ul>
-                <li>Acceso a inversiones conservadoras</li>
-                <li>Otros beneficios...</li>
+                <li>Acceso a informes mensuales de rendimiento.</li>
+                <li>Asesoramiento personalizado cada trimestre.</li>
             </ul>
         </div>
-        
-        <div class="membresia-card" onclick="mostrarDetalleMembresia('plata')">
+
+        <div class="membresia-card plata" data-membresia="plata" onclick="mostrarDetallesMembresia('plata')">
             <h2>Membresía Plata</h2>
-            <p>Precio mensual: $X</p>
-            <p>Precio anual: $Y</p>
+            <p>Precio mensual: $45</p>
+            <p>Precio anual: <span id="precioAnualPlata">$486</span> (10% de descuento)</p>
             <ul>
                 <li>Acceso a inversiones moderadas</li>
-                <li>Otros beneficios...</li>
+                <li>Asesoramiento personalizado trimestral</li>
+                <li>Acceso a informes de rendimiento avanzados</li>
+                <li>Acceso a webinars exclusivos</li>
             </ul>
         </div>
         
-        <div class="membresia-card" onclick="mostrarDetalleMembresia('oro')">
+        <div class="membresia-card oro" data-membresia="oro" onclick="mostrarDetallesMembresia('oro')">
             <h2>Membresía Oro</h2>
-            <p>Precio mensual: $X</p>
-            <p>Precio anual: $Y</p>
+            <p>Precio mensual: $80</p>
+            <p>Precio anual: <span id="precioAnualOro">$864</span> (10% de descuento)</p>
             <ul>
                 <li>Acceso a inversiones agresivas</li>
-                <li>Otros beneficios...</li>
+                <li>Asesoramiento personalizado mensual</li>
+                <li>Acceso a informes de rendimiento avanzados</li>
+                <li>Acceso a PDFs y textos completos</li>
             </ul>
         </div>
         
-        <div class="membresia-card" onclick="mostrarDetalleMembresia('platino')">
+        <div class="membresia-card platino" data-membresia="platino" onclick="mostrarDetallesMembresia('platino')">
             <h2>Membresía Platino</h2>
-            <p>Precio mensual: $X</p>
-            <p>Precio anual: $Y</p>
+            <p>Precio mensual: $150</p>
+            <p>Precio anual: <span id="precioAnualPlatino">$1620</span> (10% de descuento)</p>
             <ul>
                 <li>Acceso a inversiones en criptomonedas</li>
-                <li>Otros beneficios...</li>
+                <li>Asesoramiento personalizado mensual</li>
+                <li>Acceso a informes de rendimiento avanzados</li>
+                <li>Acceso a PDFs y textos completos</li>
             </ul>
         </div>
+
     </div>
 
     <footer>
