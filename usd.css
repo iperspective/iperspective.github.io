@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
-    height: 2800px;
+    height: 230vh;
 }
 
 header {
@@ -52,7 +52,7 @@ nav a:hover {
 }
 
 #usd-index h2 {
-    font-size: 24px;
+    font-size: 2.5vh;
     font-weight: bold;
     color: #333;
     margin-bottom: 5px;
@@ -65,9 +65,10 @@ nav a:hover {
 }
 
 main {
-    max-width: 80%;
+    max-width: 90%;
     margin: 20px auto;
     padding: 1em;
+    height: 210vh;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -123,3 +124,23 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column; 
+        align-items: center;
+        padding: 5px;
+    }
+
+    nav ul {
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    nav li {
+        width: 80vw;
+        padding: 2px 0; 
+        margin: 10px 0; 
+        font-size: 2vh; 
+        text-align: center; 
+    }

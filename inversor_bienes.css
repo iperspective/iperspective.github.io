@@ -1,7 +1,7 @@
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
-  height: 170vh;
+  height: 180vh;
   width: 100%;
   padding: 0;
   background-color: #f0f0f0;
@@ -97,7 +97,7 @@ nav {
 
 main {
   max-width: 90%;
-  height: 140vh;
+  height: 150vh;
   margin: 20px auto;
   padding: 1em;
   background-color: #fff;
@@ -105,13 +105,13 @@ main {
 }
 
 footer {
-  background-color: #4CAF50;
-  color: #fff;
-  text-align: center;
-  padding: 1em 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+    background: linear-gradient(to right, #ff6666, #ff3333);
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .inversiones,

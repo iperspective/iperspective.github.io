@@ -10,7 +10,7 @@ main {
     max-width: 100%;
     margin: 10px auto;
     width: 90%;
-    height: 270vh;
+    height: 320vh;
     padding: 1em;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -31,7 +31,7 @@ main {
     border: none;
     width: 80%;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 2vh;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
     margin-bottom: 50px;
@@ -65,14 +65,14 @@ main {
 }
 
 #descripcion h2 {
-  font-size: 2.5vh;
+  font-size: 2vh;
   text-align: left;
   margin-bottom: 15px;
   font-weight: bold;
 }
 
 #descripcion p {
-  font-size: 2vh;
+  font-size: 1.6vh;
   margin-bottom: 15px;
   text-align: justify;
   line-height: 1.6;
@@ -83,7 +83,7 @@ main {
   padding-left: 20px;
   margin-left: auto; 
   margin-right: auto;
-  font-size: 2vh;
+  font-size: 1.6vh;
   line-height: 1.6;
 }
 
@@ -101,14 +101,14 @@ main {
 }
 
 #atributos h2 {
-  font-size: 2.5vh;
+  font-size: 2vh;
   margin-bottom: 15px;
   color: white;
   font-weight: bold;
 }
 
 #atributos p {
-  font-size: 2vh;
+  font-size: 1.6vh;
   text-align: justify;
   margin-bottom: 15px;
   line-height: 1.6;
@@ -118,7 +118,7 @@ main {
 #atributos ul {
   list-style-type: disc;
   margin-left: 20px;
-  font-size: 2vh;
+  font-size: 1.6vh;
   line-height: 1.6;
   color: #555;
 }
@@ -137,13 +137,13 @@ main {
 }
 
 #estrategia-salida h2 {
-  font-size: 2.5vh;
+  font-size: 2vh;
   margin-bottom: 15px;
   color: #fff;
 }
 
 #estrategia-salida p {
-  font-size: 2vh;
+  font-size: 1.6vh;
   margin-bottom: 15px;
   line-height: 1.6;
   color: #fff;
@@ -163,7 +163,7 @@ main {
 }
 
 #documentos h3 {
-  font-size: 2.5vh;
+  font-size: 2vh;
   margin-bottom: 10px;
   color: #fff;
   font-weight: bold;
@@ -177,7 +177,7 @@ main {
 
 #documentos li {
   margin-bottom: 10px;
-  font-size: 2vh;
+  font-size: 1.6vh;
   color: #fff;
 }
 
@@ -286,11 +286,11 @@ nav {
 }
 
 footer {
-  background-color: #4CAF50;
-  color: #fff;
-  text-align: center;
-  padding: 1em 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+    background: linear-gradient(to right, #ff6666, #ff3333);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
