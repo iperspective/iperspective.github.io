@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    height: 220vh;
+    height: 240vh;
     background-color: #f0f0f0;
 }
 
@@ -45,7 +45,7 @@ main {
     max-width: 100%;
     margin: 10px auto;
     width: 90%;
-    height: 230vh;
+    height: 240vh;
     padding: 1em;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
