@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    height: 320vh;
+    height: 300vh;
     width: 100%;
     background-color: #f0f0f0;
 }
@@ -10,7 +10,7 @@ body {
 main {
     width: 90%;
     margin: 10px auto;
-    height: 270vh;
+    height: 280vh;
     padding: 1em;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -80,6 +80,33 @@ main {
     background-color: #2980b9;
 }
 
+#redes-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    background-color: rgba(65, 105, 225, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#redes-menu a {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 2vh;
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu-icon {
+    position: absolute;
+    top: 32px;
+    left: 64px;
+    cursor: pointer;
+    font-size: 42px;
+    color: #fff;
+}
 
 header {
     background: linear-gradient(to right, #ff6666, #ff3333);
@@ -97,15 +124,12 @@ h2.subtitulo {
 }
 
 nav {
-    background-color: #ffe6e6;
-    margin: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: background-color 0.3s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    width: 91%;
 }
 
 nav ul {
@@ -210,7 +234,7 @@ nav {
     height: 50vh;
     margin: 20px auto;
     margin-top: 10px;
-    margin-bottom: 210px;
+    margin-bottom: 230px;
 }
 
 .destacado {
@@ -226,12 +250,12 @@ nav {
 
 .destacado h3 {
     margin-top: 0 auto;
-    font-size: 1.8vh;
+    font-size: 2.2vh;
 }
 
 .destacado p {
     margin-bottom: 10px;
-    font-size: 1.5vh;
+    font-size: 1.8vh;
     padding: 5px;
 }
 
@@ -440,14 +464,14 @@ footer {
 
 .botones-monitorizaciones {
     display: flex;
-    margin-top: 30px;
+    margin-top: 40px;
     justify-content: center;
     gap: 5px;
 }
 
 .boton-monitorizacion {
     padding: 5px 20px;
-    font-size: 1.7vh;
+    font-size: 2vh;
     border: none;
     background-color: transparent;
     color: #fff;
@@ -456,7 +480,7 @@ footer {
     border-radius: 5px;
     width: 100%;
     height: 7.5vh;
-    background-image: linear-gradient(to right, #ff5722, #ff9800); /* Cambiado a degradado naranja */
+    background-image: linear-gradient(to right, #ff5722, #ff9800);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
@@ -509,6 +533,7 @@ footer {
 }
 
 @media (max-width: 480px) {
+    
     nav {
         flex-direction: column; 
         align-items: center;
@@ -531,6 +556,39 @@ footer {
     #popup-container button {
         width: 80%; 
     }
+
+    #redes-menu {
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 17vw;
+        text-align: center;
+        width: 60vw;
+
+        background-color: rgba(355, 355, 355, 0.7);
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    }
+
+    #redes-menu a {
+        display: block;
+        margin-bottom: 7px;
+        font-size: 2.2vh;
+        color: black;
+        text-decoration: none;
+    }
+
+    #menu-icon {
+        position: absolute;
+        top: 3px;
+        left: 45vw;
+        cursor: pointer;
+        font-size: 32px;
+        color: #fff;
+    }
+
     body {
         font-family: 'Arial', sans-serif;
         margin: 0;

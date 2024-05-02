@@ -186,6 +186,28 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
+    document.addEventListener("DOMContentLoaded", function() {
+    const menuIcon = document.getElementById('menu-icon');
+    const redesMenu = document.getElementById('redes-menu');
+
+    menuIcon.addEventListener('click', function() {
+        redesMenu.style.display = (redesMenu.style.display === 'block') ? 'none' : 'block';
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!redesMenu.contains(event.target) && event.target !== menuIcon) {
+            redesMenu.style.display = 'none';
+        }
+    });
+
+    const enlacesRedes = document.querySelectorAll('#redes-menu a');
+    enlacesRedes.forEach(enlace => {
+        enlace.addEventListener('click', function(event) {
+            event.preventDefault();
+            window.open(enlace.href, '_blank');
+        });
+    });
+});
 
 
 
