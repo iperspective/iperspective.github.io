@@ -31,7 +31,7 @@ main {
     border: none;
     width: 80%;
     border-radius: 5px;
-    font-size: 2vh;
+    font-size: 2.2vh;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
     margin-bottom: 50px;
@@ -65,14 +65,14 @@ main {
 }
 
 #descripcion h2 {
-  font-size: 2vh;
+  font-size: 2.2vh;
   text-align: left;
   margin-bottom: 15px;
   font-weight: bold;
 }
 
 #descripcion p {
-  font-size: 1.6vh;
+  font-size: 1.8vh;
   margin-bottom: 15px;
   text-align: justify;
   line-height: 1.6;
@@ -83,7 +83,7 @@ main {
   padding-left: 20px;
   margin-left: auto; 
   margin-right: auto;
-  font-size: 1.6vh;
+  font-size: 1.8vh;
   line-height: 1.6;
 }
 
@@ -101,14 +101,14 @@ main {
 }
 
 #atributos h2 {
-  font-size: 2vh;
+  font-size: 2.2vh;
   margin-bottom: 15px;
   color: white;
   font-weight: bold;
 }
 
 #atributos p {
-  font-size: 1.6vh;
+  font-size: 1.8vh;
   text-align: justify;
   margin-bottom: 15px;
   line-height: 1.6;
@@ -118,7 +118,7 @@ main {
 #atributos ul {
   list-style-type: disc;
   margin-left: 20px;
-  font-size: 1.6vh;
+  font-size: 1.8vh;
   line-height: 1.6;
   color: #555;
 }
@@ -137,13 +137,13 @@ main {
 }
 
 #estrategia-salida h2 {
-  font-size: 2vh;
+  font-size: 2.2vh;
   margin-bottom: 15px;
   color: #fff;
 }
 
 #estrategia-salida p {
-  font-size: 1.6vh;
+  font-size: 1.8vh;
   margin-bottom: 15px;
   line-height: 1.6;
   color: #fff;
@@ -163,7 +163,7 @@ main {
 }
 
 #documentos h3 {
-  font-size: 2vh;
+  font-size: 2.2vh;
   margin-bottom: 10px;
   color: #fff;
   font-weight: bold;
@@ -177,7 +177,7 @@ main {
 
 #documentos li {
   margin-bottom: 10px;
-  font-size: 1.6vh;
+  font-size: 1.8vh;
   color: #fff;
 }
 
@@ -209,7 +209,7 @@ header {
 
 h2.subtitulo {
     font-weight: normal;
-    margin-top:;
+    margin-bottom: 40px;
 }
 
 nav {
@@ -264,7 +264,7 @@ nav a {
     background-color: #4CAF50;
     color: #fff;
     margin: 0 auto;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 5px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -289,7 +289,7 @@ footer {
     background: linear-gradient(to right, #ff6666, #ff3333);
     color: #fff;
     text-align: center;
-    padding: 1em 0;
+    padding: 0.5em 0;
     position: fixed;
     bottom: 0;
     width: 100%;

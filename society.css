@@ -36,7 +36,7 @@ header {
 nav {
     background-color: #fff;
     padding: 10px;
-    margin: 0 auto; /* Centrar horizontalmente */
+    margin: 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 90%;
@@ -58,7 +58,6 @@ nav a {
     padding: 10px;
     background: linear-gradient(to right, #ff6666, #ff3333);
     color: #fff;
-
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }

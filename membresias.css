@@ -2,8 +2,26 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    height: 130vh;
+    height: 180vh;
     background-color: #f0f0f0;
+}
+
+.membresias-container {
+    max-width: 90%;
+    width: 90%;
+    margin: 20px auto;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    max-width: 100%;
+    margin: 10px auto;
+    width: 90%;
+    height: 250vh;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -18,7 +36,6 @@ header {
 
 h2.subtitulo {
     font-weight: normal;
-    margin-top:;
 }
 
 nav {
@@ -115,31 +132,34 @@ nav {
 }
 
 .membresia-card {
-    width: calc(42% - 20px);
-    margin: 25px;
-    height: 34vh;
-    padding: 7px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: transform 0.3s ease;
-    display: inline-block; 
-    vertical-align: top; 
-    box-sizing: border-box; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .membresia-card {
+        width: 100%;
+    }
 }
 
 .membresia-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 
 .membresia-card h2 {
-    font-size: 1.8vh;
-    margin-bottom: 10px;
+    font-size: 2.4vh;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 .membresia-card p {
     text-align: center;
-    font-size: 1.4vh;
+    font-size: 1.8vh;
     margin-top: 10px;
     margin: 5px 0;
     background-color: rgba(255, 255, 255, 0.9);
@@ -149,7 +169,7 @@ nav {
 
 .membresia-card ul {
     margin-top: 20px;
-    font-size: 1.3vh;
+    font-size: 1.6vh;
     padding-left: 0px;
     list-style: none;
 }

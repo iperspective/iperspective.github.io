@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversor Agresivo - Perspective App</title>
+    <link rel="stylesheet" href="inversor_agresivo.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Perspective App</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html" onclick="loadSection('economy')">Volver a Inicio</a></li>
+            <li><a href="inversor_conservador.html">Inversor Conservador</a></li>
+            <li><a href="inversor_moderado.html">Inversor Moderado</a></li>
+            
+            <li><a href="inversor_crypto.html">Inversor Crypto</a></li>
+            <li><a href="inversor_bienes.html">Inversor Bienes Raices</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <div class="container">
+            <h2>Información para el Inversor Agresivo</h2>
+            <p>En esta sección encontrarás información y recursos relevantes para el inversor agresivo.</p>
+            <p>A continuación, te presentamos algunas inversiones más agresivas que podrían ser adecuadas para tu perfil de inversor:</p>
+            <ul class="button-list">
+                <li><a href="empresas.html">Empresas de alto rendimiento</a></li>
+                <li><a href="etfs.html">ETFs de sectores emergentes</a></li>
+                <li><a href="bonos.html">Bonos de riesgo moderado-alto</a></li>
+                <li><a href="asesor.html">Consulta con un asesor especializado</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <h2>Rendimiento de la Cartera</h2>
+            <p>A continuación se muestra el rendimiento de la cartera del inversor agresivo desde el 1 de enero de 2024 hasta la fecha actual.</p>
+            <canvas id="myChart" width="80vw" height="40vh"></canvas>
+        </div>
+
+        <div class="container">
+            <button onclick="window.location.href = 'membresias.html';">Ver membresías</button>
+        </div>
+
+        <div class="container">
+            <h2>Detalle de la Cartera</h2>
+            <p>A continuación se detallan los activos y empresas que componen la cartera del inversor agresivo, junto con el porcentaje que representan en la cartera total.</p>
+            <table>
+            <thead>
+                <tr>
+                    <th>Activo</th>
+                    <th>Descripción</th>
+                    <th>Porcentaje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Empresa A</td>
+                    <td class="blurred">Empresa 1 (premium)</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>Fondo de Tecnología</td>
+                    <td class="blurred">ETF de tecnología</td>
+                    <td>15%</td>
+                </tr>
+                <tr>
+                    <td>Bono del Gobierno</td>
+                    <td class="blurred">Bono gubernamental</td>
+                    <td>12%</td>
+                </tr>
+                <tr>
+                    <td>Acciones de Energía Renovable</td>
+                    <td class="blurred">Empresas de energía verde</td>
+                    <td>8%</td>
+                </tr>
+                <tr>
+                    <td>Fondo de Bonos Corporativos</td>
+                    <td class="blurred">Bonos de empresas</td>
+                    <td>15%</td>
+                </tr>
+                <tr>
+                    <td>ETF de Índice General</td>
+                    <td class="blurred">Diversificación amplia</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>Opciones de Forex</td>
+                    <td class="blurred">Mercado de divisas</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>Fondo de Metales Preciosos</td>
+                    <td class="blurred">Oro, plata, platino, etc.</td>
+                    <td>10%</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Perspective App</p>
+    </footer>
+    <script src="inversor_agresivo.js" defer></script>
+</body>
+</html>
