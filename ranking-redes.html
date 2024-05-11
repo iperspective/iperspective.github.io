@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ranking-redes.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="ranking-redes.js" defer></script>
+    <title>Perspective App - Ranking de Redes Sociales</title>
+</head>
+
+<body>
+    <header>
+        <h1>Perspective App</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html">Volver a Inicio</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="ranking-redes" class="container">
+            <div class="info-container">
+            <h2>Ranking de Redes Sociales</h2>
+            <p>Este gráfico muestra la participación en redes sociales.</p>
+            <canvas id="rankingChart" width="1200" height="400"></canvas>
+            
+            <canvas id="rankingLineChart" width="1200" height="450"></canvas>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button id="goToTopBtn" onclick="goToTop()">↑</button>
+        <p>&copy; 2024 Perspective App</p>
+    </footer>
+</body>
+
+</html>
