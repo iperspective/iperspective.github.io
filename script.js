@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { id: "energy.html", title: "Energía" },
         
         { id: "tech.html", title: "Tecnología" },
+        
         { id: "crypto.html", title: "Crypto" },
         
     ];

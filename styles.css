@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    height: 320vh;
+    height: 360vh;
     width: 100%;
     background-color: #f0f0f0;
 }
@@ -10,7 +10,7 @@ body {
 main {
     width: 90%;
     margin: 10px auto;
-    height: 320vh;
+    height: 360vh;
     padding: 1em;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -109,14 +109,127 @@ main {
 }
 
 header {
-    background: linear-gradient(to right, #ff6666, #ff3333);
+    position: relative;
+    background: linear-gradient(45deg, #ff6666, #ff3333, #ff6666);
+    background-size: 300% 300%;
+    animation: gradientShift 10s ease infinite;
     color: #fff;
     text-align: center;
     padding: 1em 0;
     width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    cursor: false;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s ease;
+    overflow: hidden;
 }
+
+header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+    transition: background 0.3s ease;
+}
+
+header:hover:after {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes dataMove {
+    0% {
+        opacity: 1;
+        transform: translateY(100%);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-5500%);
+    }
+}
+
+.header {
+    position: relative;
+    overflow: hidden;
+}
+
+.data-animation {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    top: 160px;
+    left: 12%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: dataMove 5s infinite ease-in-out;
+}
+
+.data-animation:nth-child(2) {
+    left: 20%;
+    animation-delay: 1s;
+}
+
+.data-animation:nth-child(3) {
+    left: 32%;
+    animation-delay: 0.4s;
+}
+
+.data-animation:nth-child(4) {
+    left: 65%;
+    animation-delay: 1.2s;
+}
+
+.data-animation:nth-child(5) {
+    left: 70%;
+    animation-delay: 2.4s;
+}
+
+.data-animation:nth-child(6) {
+    left: 80%;
+    animation-delay: 1s;
+}
+
+.data-animation:nth-child(7) {
+    left: 90%;
+    animation-delay: 1.4s;
+}
+
+.data-animation:nth-child(8) {
+    left: 24%;
+    animation-delay: 1.4s;
+}
+
+.data-animation:nth-child(9) {
+    left: 74%;
+    animation-delay: 2s;
+}
+
+.data-animation:nth-child(10) {
+    left: 5%;
+    animation-delay: 0.8s;
+}
+
+.data-animation:nth-child(11) {
+    left: 95%;
+    animation-delay: 1.3s;
+}
+
 
 h2.subtitulo {
     font-weight: normal;
@@ -231,8 +344,8 @@ nav {
     background-color: #fff;
     border-radius: 10px;
     padding: 30px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
     margin-top: 40px;
 }
 
@@ -240,7 +353,7 @@ nav {
     color: #fff;
     margin-bottom: 20px;
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 3vh;
 }
 
 .tarjeta-canal {
@@ -263,6 +376,53 @@ nav {
 
 .custom-button:hover {
     background-color: seagreen;
+}
+
+.crypto-tarjeta {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.crypto-titulo {
+    color: #343a40;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.crypto-tarjeta-canal {
+    border-bottom: 1px solid #ced4da;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.crypto-titulo-canal {
+    color: #343a40;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.crypto-descripcion {
+    color: #6c757d;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.crypto-button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.crypto-button:hover {
+    background-color: #0056b3;
 }
 
 #destacados-container {

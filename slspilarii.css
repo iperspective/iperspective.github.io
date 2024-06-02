@@ -250,7 +250,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #6fb936;
+    background-color: darkgreen;
+    text-decoration: none;
+    color: white;
 }
 
 nav li {
