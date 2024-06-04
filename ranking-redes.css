@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    height: 180vh;
+    height: 280vh;
     background-color: #f0f0f0;
 }
 
@@ -65,7 +65,7 @@ nav a:hover {
 }
 
 main {
-    max-width: 80%;
+    max-width: 90%;
     margin: 20px auto;
     padding: 1em;
     background-color: #fff;
@@ -80,8 +80,15 @@ main {
     width: 100%;
 }
 
-canvas {
-    margin-top: 20px;
+.canvas-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.canvas-container canvas {
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .info-container {

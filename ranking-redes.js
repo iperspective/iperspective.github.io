@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
             datasets: [{
                 label: 'Usuarios en Millones',
                 data: dataBar,
-                backgroundColor: 'rgba(54, 162, 235, 0.6)', // Color de las barras
-                borderColor: 'rgba(54, 162, 235, 1)', // Borde de las barras
+                backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
             }]
         },

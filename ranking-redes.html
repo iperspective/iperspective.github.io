@@ -17,16 +17,31 @@
     <nav>
         <ul id="mainNav">
             <li><a href="index.html">Volver a Inicio</a></li>
+            <li><a href="tech.html">Explorar Tecnología</a></li>
         </ul>
     </nav>
     <main>
         <section id="ranking-redes" class="container">
             <div class="info-container">
-            <h2>Ranking de Redes Sociales</h2>
-            <p>Este gráfico muestra la participación en redes sociales.</p>
-            <canvas id="rankingChart" width="1200" height="400"></canvas>
-            
-            <canvas id="rankingLineChart" width="1200" height="450"></canvas>
+                <h2>Ranking de Redes Sociales</h2>
+                <p>Este gráfico muestra la participación en redes sociales.</p>
+                <div class="canvas-container">
+                    <canvas id="rankingChart"></canvas>
+                </div>
+                
+                <!-- Primer iframe agregado -->
+                <h3>Uso de redes sociales</h3>
+                <p>Porcentaje de hogares en Estados Unidos que utilizan tecnologías específicas</p>
+                <iframe src="https://ourworldindata.org/grapher/technology-adoption-by-households-in-the-united-states?country=~Social+media+usage&tab=chart" loading="lazy" style="width: 100%; height: 750px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+                
+                <!-- Título y descripción para el segundo iframe -->
+                <h3>Horas diarias dedicadas a los medios digitales en Estados Unidos</h3>
+                <p>
+                    Horas diarias promedio dedicadas a interactuar con medios digitales (por ejemplo, imágenes y videos, páginas web, aplicaciones de redes sociales, etc.). Los datos para 'otros dispositivos conectados' incluyen consolas de juegos. Móviles incluye smartphones y tabletas. Todos los datos incluyen el uso en casa y en el trabajo para personas mayores de 18 años.
+                </p>
+                
+                <!-- Segundo iframe agregado -->
+                <iframe src="https://ourworldindata.org/grapher/daily-hours-spent-with-digital-media-per-adult-user?tab=chart" loading="lazy" style="width: 100%; height: 750px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 
             </div>
         </section>

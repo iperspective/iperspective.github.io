@@ -62,34 +62,76 @@ header {
 
 
 nav {
-    background-color: #fff;
-    padding: 1em;
+    background-color: #ffe6e6;
+    margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 nav ul {
     list-style: none;
-    margin: 10px;
+    margin: 0;
+    width: 90%;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
-nav li {
-    display: inline-block;
-    margin: 0 10px;
+nav ul li {
+    margin: 5px;
 }
 
-nav a {
+nav ul li a {
     text-decoration: none;
     padding: 10px;
-    background: linear-gradient(to right, #ff6666, #ff3333);
+    background-color: #4CAF50;
     color: #fff;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-nav a:hover {
-    background-color: #45a049;
+nav ul li a:hover {
+    background-color: #6fb936;
+}
+
+nav li {
+    margin: 10px 0; 
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    width: 60%;
+    background-color: #4CAF50;
+    color: #fff;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav {
+    animation: fadeInDown 0.5s ease;
 }
 
 .container {
