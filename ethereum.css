@@ -15,7 +15,7 @@ main {
 }
 
 header {
-    background: linear-gradient(to right, #ff6666, #ff3333);
+    background: linear-gradient(to right, #3399ff, #3366ff);
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -51,7 +51,7 @@ nav li {
 nav a {
     text-decoration: none;
     padding: 10px;
-    background-color: #ff6666;
+    background-color: #3399ff;
     color: #fff;
     margin: 5px;
     border-radius: 5px;
@@ -139,7 +139,7 @@ section {
 }
 
 footer {
-    background: linear-gradient(to right, #ff6666, #ff3333);
+    background: linear-gradient(to right, #3399ff, #3366ff);
     color: #fff;
     text-align: center;
     padding: 0.5em 0;

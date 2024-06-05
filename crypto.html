@@ -24,10 +24,13 @@
     <main>
         
         <section id="crypto-content" class="content-container">
-            
             <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-5" lcw-base="USD" lcw-color-tx="#000000" lcw-marquee-1="coins" lcw-marquee-2="movers" lcw-marquee-items="10" ></div>
-
         </section>
+
+        <div class="button-container">
+            <a href="https://bingx.com/es-es/invite/EK14ZY/" target="_blank" class="button buy-button">Comprar</a>
+            <a href="https://bingx.com/es-es/invite/EK14ZY/" target="_blank" class="button sell-button">Vender</a>
+        </div>
 
             <section>
             <coingecko-coin-heatmap-widget height="400" width="100%" locale="es"></coingecko-coin-heatmap-widget>
@@ -35,26 +38,26 @@
 
             <div class="tradingview-widget-container">
               <div class="tradingview-widget-container__widget"></div>
-              <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+              <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Siga los mercados en TradingView</span></a></div>
               <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
               {
               "symbols": [
                 [
-                  "CRYPTOCAP:TOTAL|1D"
+                  "CRYPTOCAP:TOTAL|ALL"
                 ],
                 [
-                  "CRYPTOCAP:TOTAL3|1D"
+                  "CRYPTOCAP:TOTAL3|ALL"
                 ],
                 [
-                  "CRYPTOCAP:TOTALDEFI|1D"
+                  "CRYPTOCAP:TOTALDEFI|ALL"
                 ]
               ],
               "chartOnly": false,
               "width": "100%",
-              "height": 400,
-              "locale": "en",
+              "height": 500,
+              "locale": "es",
               "colorTheme": "light",
-              "autosize": false,
+              "autosize": true,
               "showVolume": false,
               "showMA": false,
               "hideDateRanges": false,
@@ -71,6 +74,7 @@
               "maLineColor": "#2962FF",
               "maLineWidth": 1,
               "maLength": 9,
+              "backgroundColor": "rgba(255, 255, 255, 0)",
               "lineWidth": 2,
               "lineType": 0,
               "dateRanges": [
@@ -80,11 +84,16 @@
                 "12m|1D",
                 "60m|1W",
                 "all|1M"
-              ],
-              "lineColor": "rgba(41, 98, 255, 1)"
+              ]
             }
               </script>
             </div>
+
+            <section id="binance-profile">
+                <h2>Perfil de Noticias en Binance Square</h2>
+                <p>Puedes ver el perfil de Binance de Perspective haciendo clic en el siguiente enlace:</p>
+                <a href="https://app.binance.com/uni-qr/cpro/zkycrypto?l=es&r=120628648&uc=web_square_share_link&us=copylink" target="_blank">Ver Perfil de Binance</a>
+            </section>
 
             <section>
             <script src="https://widgets.coingecko.com/coingecko-coin-compare-chart-widget.js"></script>
