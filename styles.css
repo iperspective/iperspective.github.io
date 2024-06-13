@@ -212,7 +212,7 @@ header:hover:after {
 
 .data-animation:nth-child(8) {
     left: 24%;
-    animation-delay: 1.4s;
+    animation-delay: 0.4s;
 }
 
 .data-animation:nth-child(9) {
@@ -226,8 +226,23 @@ header:hover:after {
 }
 
 .data-animation:nth-child(11) {
-    left: 95%;
+    left: 45%;
     animation-delay: 1.3s;
+}
+
+.data-animation:nth-child(12) {
+    left: 68%;
+    animation-delay: 0.4s;
+}
+
+.data-animation:nth-child(13) {
+    left: 54%;
+    animation-delay: 0.8s;
+}
+
+.data-animation:nth-child(14) {
+    left: 47%;
+    animation-delay: 1s;
 }
 
 
