@@ -1,8 +1,9 @@
-/* Estilos para el calendario económico */
-body, html {
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    height: 1500px;
+    height: 150vh;
+    background-color: #f0f0f0;
 }
 
 header {
@@ -43,6 +44,15 @@ nav a:hover {
     background-color: #45a049;
 }
 
+main {
+    max-width: 80%;
+    margin: 20px auto;
+    height: 140vh;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .tradingview-widget-container {
     width: 95%;
     height: 60vh;
@@ -52,7 +62,7 @@ nav a:hover {
 
 
 footer {
-    background: linear-gradient(to right, #ff9999, #ff6666); /* Cambio a un gradiente en lugar de un color sólido */
+    background: linear-gradient(to right, #ff6666, #ff3333);
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -60,3 +70,42 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column; 
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    nav li {
+        width: 80vw;
+        padding: 2px 0; 
+        margin: 12px 0; 
+        font-size: 2vh; 
+        text-align: center; 
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #f0f0f0;
+    }
+
+    main {
+        width: 90%;
+        margin: 10px auto;
+        height: 105vh;
+        padding: 1em;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
