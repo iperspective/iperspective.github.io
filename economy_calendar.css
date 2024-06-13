@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    height: 170vh;
+    height: 250vh;
     background-color: #f0f0f0;
 }
 
@@ -47,7 +47,7 @@ nav a:hover {
 main {
     max-width: 80%;
     margin: 20px auto;
-    height: 200vh;
+    height: 250vh;
     padding: 1em;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -96,7 +96,7 @@ footer {
         font-family: 'Arial', sans-serif;
         margin: 0;
         padding: 0;
-        height: 100vh;
+        height: 120vh;
         width: 100%;
         background-color: #f0f0f0;
     }
@@ -104,7 +104,7 @@ footer {
     main {
         width: 90%;
         margin: 10px auto;
-        height: 105vh;
+        height: 125vh;
         padding: 1em;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
