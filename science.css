@@ -99,6 +99,26 @@ nav a:hover {
     color: #4CAF50;
 }
 
+#goToTopBtn {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    width: 4vh;
+    height: 4vh;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 9999; /* Ajusta este valor según sea necesario */
+}
+
+#goToTopBtn:hover {
+    background-color: #0056b3;
+}
+
 footer {
     background: linear-gradient(to right, #6699ff, #3366ff);
     color: #fff;
@@ -108,3 +128,23 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column; 
+        align-items: center;
+        padding: 5px;
+    }
+
+    nav ul {
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    nav li {
+        width: 80vw;
+        padding: 2px 0; 
+        margin: 10px 0; 
+        font-size: 2vh; 
+        text-align: center; 
+    }

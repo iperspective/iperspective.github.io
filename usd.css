@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
-    height: 230vh;
+    height: 250vh;
 }
 
 header {
@@ -68,7 +68,7 @@ main {
     max-width: 90%;
     margin: 20px auto;
     padding: 1em;
-    height: 210vh;
+    height: 250vh;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

@@ -2,8 +2,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    height: 150vh;
     background-color: #f0f0f0;
+    height: 250vh;
 }
 
 header {
@@ -45,15 +45,17 @@ nav a:hover {
 }
 
 .ticker-widget {
-    margin: 20px auto;
-    max-width: 90%;
+    margin: 10px auto;
+    margin-top: 10px;
+    max-width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 main {
-    max-width: 80%;
+    max-width: 90%;
     margin: 20px auto;
     padding: 1em;
+    height: 250vh;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -93,25 +95,3 @@ footer {
         font-size: 2vh; 
         text-align: center; 
     }
-
-    body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        height: 150vh;
-        width: 100%;
-        background-color: #f0f0f0;
-    }
-
-    main {
-        width: 90%;
-        margin: 10px auto;
-        padding: 1em;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .heatmap-widget {
-        height: 50vh;
-    }
-}
