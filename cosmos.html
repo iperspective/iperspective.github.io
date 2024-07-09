@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cosmos.css">
+    <title>Cosmos - Perspective App</title>
+</head>
+<body>
+    <header>
+        <h1>Perspective App</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html">Volver a Inicio</a></li>
+            <li><button onclick="scrollToSection('cosmos')">Cosmos</button></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="info-container">
+            <h2>Explora el Cosmos</h2>
+            <p>Observa el universo en tiempo real.</p>
+        </div>
+        
+        <div class="cosmic-buttons">
+            <button onclick="showCelestialBody('sun')">Sol</button>
+            <button onclick="showCelestialBody('mercury')">Mercurio</button>
+            <button onclick="showCelestialBody('venus')">Venus</button>
+            <button onclick="showCelestialBody('earth')">Tierra</button>
+            <button onclick="showCelestialBody('mars')">Marte</button>
+            <button onclick="showCelestialBody('jupiter')">Júpiter</button>
+            <button onclick="showCelestialBody('saturn')">Saturno</button>
+            <button onclick="showCelestialBody('uranus')">Urano</button>
+            <button onclick="showCelestialBody('neptune')">Neptuno</button>
+        </div>
+
+        <section id="cosmos" class="container">
+            <iframe id="spaceFrame" width="100%" height="500px" src="https://eyes.nasa.gov/apps/solar-system/#/home" frameborder="0" allowfullscreen></iframe>
+        </section>
+        
+    </main>
+
+    <footer>
+        <button id="goToTopBtn" onclick="goToTop()">↑</button>
+        <p>&copy; 2024 Perspective App</p>
+    </footer>
+    <script src="cosmos.js"></script>
+</body>
+</html>

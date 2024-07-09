@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 300vh;
+    height: 350vh;
 }
 
 main {
     max-width: 80%;
-    height: 300vh;
+    height: 370vh;
     margin: 20px auto;
     padding: 1em;
     background-color: #fff;
