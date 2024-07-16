@@ -1,5 +1,5 @@
 function irAPagina() {
-      window.location.href = 'slspilarii.html';
+      window.location.href = 'slspilariii.html';
     }
 
     function irAPaginaPilar3() {
