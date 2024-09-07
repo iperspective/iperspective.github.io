@@ -1,7 +1,7 @@
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
-  height: 240vh;
+  height: 260vh;
   width: 100%;
   padding: 0;
   background-color: #f0f0f0;
@@ -97,7 +97,7 @@ nav {
 
 main {
   max-width: 90%;
-  height: 240vh;
+  height: 260vh;
   margin: 20px auto;
   padding: 1em;
   background-color: #fff;
