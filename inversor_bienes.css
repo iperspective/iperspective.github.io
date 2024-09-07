@@ -1,7 +1,7 @@
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
-  height: 260vh;
+  height: 280vh;
   width: 100%;
   padding: 0;
   background-color: #f0f0f0;
@@ -97,7 +97,7 @@ nav {
 
 main {
   max-width: 90%;
-  height: 260vh;
+  height: 280vh;
   margin: 20px auto;
   padding: 1em;
   background-color: #fff;
@@ -184,10 +184,10 @@ h2 {
   background-color: #4caf50;
   text-align: center;
   color: white;
-  line-height: 20px; /* Ensure text is vertically centered */
+  line-height: 20px;
   font-weight: bold;
   border-radius: 25px;
-  transition: width 0.5s ease; /* Smooth transition */
+  transition: width 0.5s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -265,6 +265,15 @@ button:hover {
         padding: 10px;
     }
 
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      height: 280vh;
+      width: 100%;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
     nav ul {
         padding: 5px;
         margin-top: 5px;
@@ -276,6 +285,15 @@ button:hover {
         margin: 5px 0; 
         font-size: 2vh; 
         text-align: center; 
+    }
+
+    main {
+      max-width: 90%;
+      height: 280vh;
+      margin: 20px auto;
+      padding: 1em;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     #popup-container button {

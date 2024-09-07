@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
         labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
         datasets: [{
             label: "Rendimiento",
-            data: [0, 6.6, 6.1, 22, 19.2, , , , , , , 40],
+            data: [0, 6.6, 6.1, 22, 19.2, 16, 15, 20, 22, , , 40],
             backgroundColor: "rgba(255, 99, 132, 0.2)",
             borderColor: "rgba(255, 99, 132, 1)",
             borderWidth: 2 
