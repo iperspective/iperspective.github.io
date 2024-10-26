@@ -2,7 +2,6 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    height: 150vh;
     background-color: #f0f0f0;
 }
 
@@ -22,13 +21,15 @@ nav {
 
 nav ul {
     list-style: none;
-    margin: 10px;
+    margin: 0; /* Eliminar margen para evitar desbordamiento */
     padding: 0;
+    display: flex; /* Cambiar a flexbox para facilitar el diseño */
+    justify-content: center; /* Centrar elementos */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten a la siguiente línea si es necesario */
 }
 
 nav li {
-    display: inline-block;
-    margin: 0 10px;
+    margin: 0 10px; /* Espacio horizontal entre los elementos */
 }
 
 nav a {
@@ -43,7 +44,6 @@ nav a {
 nav a:hover {
     background-color: #45a049;
 }
-
 
 main {
     max-width: 100%;
@@ -70,7 +70,7 @@ main {
 }
 
 #holdersChart {
-    max-width: 600px; /* Ajusta el ancho máximo si es necesario */
+    max-width: 100%; /* Asegura que el gráfico ocupe el ancho completo */
     height: 400px; /* Ajusta la altura según sea necesario */
     margin: 20px auto; /* Centrar el canvas */
 }
@@ -82,50 +82,36 @@ footer {
     padding: 0.5em 0;
     position: fixed;
     bottom: 0;
-    width: 70%;
+    width: 100%;
 }
 
 @media (max-width: 480px) {
     nav {
-        flex-direction: column; 
-        align-items: center;
         padding: 10px;
     }
 
     nav ul {
-        padding: 5px;
-        margin-top: 5px;
+        padding: 0;
+        margin: 0; /* Asegura que no haya margen */
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar elementos */
     }
 
     nav li {
-        width: 80vw;
-        padding: 2px 0; 
-        margin: 12px 0; 
-        font-size: 2vh; 
-        text-align: center; 
-    }
-
-    body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        width: 100%;
-        background-color: #f0f0f0;
+        margin: 12px 0; /* Espacio vertical entre elementos */
+        font-size: 2vh; /* Ajusta el tamaño de fuente */
     }
 
     main {
         width: 90%;
-        margin: 10px auto;
-        height: 105vh;
+        margin: 10px auto; /* Centrar el contenedor principal */
         padding: 1em;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     #holders-table {
-        width: 100%;
-        border-collapse: collapse;
+        width: 100%; /* Asegura que la tabla ocupe todo el ancho */
         margin-bottom: 20px;
     }
 
@@ -134,13 +120,10 @@ footer {
         padding: 10px;
         text-align: center;
     }
-    
-    #holders-table th {
-        background-color: #f0f0f0;
-    }
-    
+
     #holdersChart {
-        max-width: 600px; 
+        max-width: 100%; /* Asegura que el gráfico ocupe el ancho completo */
         height: 400px; 
         margin: 20px auto;
     }
+}
