@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Holders - Perspective App</title>
+    <link rel="stylesheet" href="holders.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Top Holders</h1>
+    </header>
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html" onclick="loadSection('economy')">Volver a Inicio</a></li>
+            <li><a href="economy.html">Economía</a></li>
+            <li><a href="economy_calendar.html">Calendario Económico</a></li>
+            <li><a href="holders.html">Top Holders</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Lista de Top Holders de Bitcoin</h2>
+        <p>A continuación se presentan las wallets que tienen la mayor cantidad de Bitcoin, junto con su valor actual.</p>
+        
+        <table id="holders-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Wallet</th>
+                    <th>Activo</th>
+                    <th>Cantidad</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las filas de los holders se generarán aquí -->
+            </tbody>
+        </table>
+
+        <canvas id="holdersChart" width="600" height="400"></canvas> <!-- Ajustar tamaño -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Perspective App</p>
+    </footer>
+    <script src="holders.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 150vh;
+    background-color: #f0f0f0;
+}
+
+header {
+    background: linear-gradient(to right, #ff6666, #ff3333);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    background-color: #fff;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    background: linear-gradient(to right, #ff6666, #ff3333);
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #45a049;
+}
+
+
+main {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#holders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#holders-table th, #holders-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+#holders-table th {
+    background-color: #f0f0f0;
+}
+
+#holdersChart {
+    max-width: 600px; /* Ajusta el ancho máximo si es necesario */
+    height: 400px; /* Ajusta la altura según sea necesario */
+    margin: 20px auto; /* Centrar el canvas */
+}
+
+footer {
+    background: linear-gradient(to right, #ff6666, #ff3333);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column; 
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    nav li {
+        width: 80vw;
+        padding: 2px 0; 
+        margin: 12px 0; 
+        font-size: 2vh; 
+        text-align: center; 
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #f0f0f0;
+    }
+
+    main {
+        width: 90%;
+        margin: 10px auto;
+        height: 105vh;
+        padding: 1em;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #holders-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    #holders-table th, #holders-table td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    #holders-table th {
+        background-color: #f0f0f0;
+    }
+    
+    #holdersChart {
+        max-width: 600px; 
+        height: 400px; 
+        margin: 20px auto;
+    }
