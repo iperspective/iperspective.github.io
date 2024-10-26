@@ -466,12 +466,13 @@ nav {
 .destacado h3 {
     margin-top: 0 auto;
     font-size: 1.8vh;
-    margin-left: 40px;
+    margin-left: 10px;
 }
 
 .destacado p {
     margin-bottom: 10px;
-    font-size: 1.6vh;
+    margin-left: 10px;
+    font-size: 1.4vh;
     padding: 5px;
 }
 
@@ -522,6 +523,7 @@ footer {
     padding: 10px 15px;
     background-color: #ff6666cd; 
     color: #fff;
+    
     text-decoration: none;
     border-radius: 12px;
     transition: background-color 0.3s ease;
@@ -554,7 +556,7 @@ footer {
 .card a {
     display: inline-block;
     margin-top: 5vh;
-    padding: 20px 40px;
+    padding: 10px 40px;
     font-size: 1.6vh;
     background-color: #ff6666f7;
     color: #fff;
@@ -735,15 +737,19 @@ footer {
     }
 
     nav ul {
-        margin: 20px 10px;
+        margin: 10px 10px;
+        margin-left: -15px;
         margin-top: 10px;
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
     }
 
     nav li {
-        margin: 20px 10px;
+        margin: 10px 10px;
         text-align: center;
     }
+
     #menu-container {
         display: flex;
         flex-direction: column;

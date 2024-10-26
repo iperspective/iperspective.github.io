@@ -41,20 +41,19 @@ let chartInstance;
 async function fetchCurrentValues() {
     const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');
     const data = await response.json();
-    console.log('Precio de Bitcoin:', data);
     const bitcoinPrice = data.bitcoin.usd;
 
     await Promise.all(
         holders.map(async (holder) => {
             const walletResponse = await fetch(`https://api.blockchain.info/q/addressbalance/${holder.wallet}`);
             const walletData = await walletResponse.text();
-            console.log(`Datos de la wallet de ${holder.name}:`, walletData);
-            holder.amount = parseFloat(walletData) / 100000000; // Convertir satoshis a BTC
+            holder.amount = parseFloat(walletData) / 100000000;
             holder.value = holder.amount * bitcoinPrice;
         })
     );
 
     displayHolders();
+    renderChart();
 }
 
 function displayHolders() {
@@ -63,11 +62,11 @@ function displayHolders() {
 
     holders.forEach(holder => {
         const row = `
-            <tr onclick="showHolderData('${holder.wallet}')">
+            <tr>
                 <td>${holder.name}</td>
                 <td>${shortenWallet(holder.wallet)}</td>
                 <td>${holder.asset}</td>
-                <td>${Math.floor(holder.amount)}</td>
+                <td>${holder.amount.toFixed(8)}</td>
                 <td>$${holder.value.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ".")}</td>
             </tr>
         `;
@@ -75,42 +74,43 @@ function displayHolders() {
     });
 }
 
-function showHolderData(wallet) {
-    const holder = holders.find(h => h.wallet === wallet);
-    if (holder) {
-        renderChart(holder);
-    }
-}
-
 function shortenWallet(wallet) {
     return `${wallet.slice(0, 6)}...${wallet.slice(-4)}`;
 }
 
-function renderChart(holder) {
+function formatLargeNumbers(number) {
+    if (number >= 1e6) {
+        return (number / 1e6).toFixed(2) + 'M';
+    }
+    if (number >= 1e3) {
+        return (number / 1e3).toFixed(2) + 'K';
+    }
+    return number.toFixed(2);
+}
+
+function renderChart() {
     const ctx = document.getElementById('holdersChart').getContext('2d');
     if (chartInstance) {
-        chartInstance.destroy(); // Destruir el gráfico anterior
+        chartInstance.destroy();
     }
 
-    const data = [holder.amount, holder.value];
+    const labels = holders.map(holder => holder.name);
+    const amounts = holders.map(holder => holder.amount);
+    const values = holders.map(holder => holder.value);
 
     chartInstance = new Chart(ctx, {
-        type: 'bar', // Tipo de gráfico
+        type: 'bar',
         data: {
-            labels: ['Holding (BTC)', 'Valor (USD)'],
-            datasets: [{
-                label: holder.name,
-                data: data,
-                backgroundColor: [
-                    'rgba(0, 255, 171, 0.5)', // Color para el holding
-                    'rgba(255, 99, 132, 0.5)' // Color para el valor
-                ],
-                borderColor: [
-                    'rgba(0, 255, 171, 1)',
-                    'rgba(255, 99, 132, 1)'
-                ],
-                borderWidth: 1
-            }]
+            labels: labels,
+            datasets: [
+                {
+                    label: 'Valor (USD)',
+                    data: values.map(value => parseFloat((value / 1e6).toFixed(2))), // Convertir a millones
+                    backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                }
+            ]
         },
         options: {
             responsive: true,
@@ -118,24 +118,27 @@ function renderChart(holder) {
                 x: {
                     title: {
                         display: true,
-                        text: 'Cantidad y Valor'
+                        text: 'Holders'
                     }
                 },
                 y: {
                     beginAtZero: true,
                     title: {
                         display: true,
-                        text: 'Holders'
+                        text: 'Cantidad (BTC) / Valor (USD en M)'
+                    },
+                    ticks: {
+                        callback: function(value) {
+                            return formatLargeNumbers(value * 1e6); // Mostrar en M
+                        }
                     }
                 }
             },
-            indexAxis: 'y', // Para hacer el gráfico horizontal
             animation: {
-                duration: 500, // Duración de la animación
+                duration: 500
             }
         }
     });
 }
 
-// Inicia la función para obtener los valores
 fetchCurrentValues();
