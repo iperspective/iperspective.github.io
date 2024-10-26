@@ -270,9 +270,9 @@ nav ul {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 nav ul li {
@@ -283,10 +283,13 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #0abd37dd;
     color: #fff;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    display: block;
+    text-align: center;
+    width: 100%;
 }
 
 nav ul li a:hover {
@@ -304,9 +307,9 @@ nav a {
     background-color: #4CAF50;
     color: #fff;
     margin: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    border-radius: 12px;
     transition: background-color 0.3s ease;
 }
 
@@ -462,19 +465,19 @@ nav {
 
 .destacado h3 {
     margin-top: 0 auto;
-    font-size: 2.2vh;
+    font-size: 1.8vh;
 }
 
 .destacado p {
     margin-bottom: 10px;
-    font-size: 1.8vh;
+    font-size: 1.6vh;
     padding: 5px;
 }
 
 .destacado a {
     height: 15vh;
     display: inline-block;
-    padding: 10px 5px;
+    padding: 10px 10px;
     background-color: #ffe6e6; 
     color: #ff6666; 
     text-decoration: none;
@@ -513,12 +516,13 @@ footer {
 
 .button {
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 0px;
+    margin-bottom: 10px;
     padding: 10px 15px;
-    background-color: #ff6666; 
+    background-color: #ff6666cd; 
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 12px;
     transition: background-color 0.3s ease;
 }
 
@@ -678,12 +682,12 @@ footer {
     display: flex;
     margin-top: 40px;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
 }
 
 .boton-monitorizacion {
     padding: 5px 20px;
-    font-size: 2vh;
+    font-size: 1.8vh;
     border: none;
     background-color: transparent;
     color: #fff;
@@ -691,7 +695,7 @@ footer {
     transition: background-color 0.3s ease, color 0.3s ease;
     border-radius: 5px;
     width: 40%;
-    height: 7.5vh;
+    height: 8vh;
     background-image: linear-gradient(to right, #ff5722, #ff9800);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
@@ -728,7 +732,7 @@ footer {
     nav ul {
         margin: 20px 10px;
         margin-top: 10px;
-        
+        width: 100%;
     }
 
     nav li {
