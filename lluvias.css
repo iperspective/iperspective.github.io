@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    height: 135vh;
+    height: 145vh;
     background-color: #f0f0f0;
 }
 
@@ -44,12 +44,11 @@ nav a:hover {
     background-color: #45a049;
 }
 
-
 main {
-    max-width: 90%;
+    max-width: 100%;
     margin: 20px auto;
     padding: 1em;
-    height: 100vh;
+    height: 120vh;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -62,7 +61,7 @@ main {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1em;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
@@ -86,9 +85,9 @@ main {
 }
 
 .container iframe {
-    margin-top: 30px;
+    margin-top: 10px;
     width: 90%;
-    height: 90%;
+    height: 95%;
     border: none; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -124,7 +123,7 @@ main {
     color: #fff;
     border: none;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
     z-index: 9999;
@@ -147,7 +146,7 @@ main {
     width: 100%;
     padding: 10px 10px;
     margin-top: 10px;
-    font-size: 1.5vh;
+    font-size: 1em;
     border: none;
     border-radius: 5px;
     cursor: pointer;
