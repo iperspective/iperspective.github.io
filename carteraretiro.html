@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartera de Retiro</title>
+  <link rel="stylesheet" href="carteraretiro.css">
+</head>
+<body>
+  <header>
+    <h1>Cartera de Retiro</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="inversor_conservador.html">Inversor Conservador</a></li>
+        <li><a href="carteraretiro.html" class="active">Cartera de Retiro</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="descripcion">
+      <p>La Cartera de Retiro está diseñada para proporcionar estabilidad y rendimientos consistentes a largo plazo, asegurando un flujo de ingresos seguro para la jubilación.</p>
+    </section>
+
+    <!-- Sección de información del plan -->
+    <section class="plan-info">
+      <h2>Plan Cartera Retiro 2025</h2>
+      <p>Con este plan, aprenderás a construir tu propia cartera de inversión adaptada a diferentes horizontes y capacidades de inversión. 
+        <ul>
+        Dependiendo del monto que puedas aportar anualmente, te ofrecemos distintos niveles para comenzar a invertir de forma inteligente:</p>
+      <ul>
+        <li><strong>Plan Básico ($500 al año aprox.)</strong>: Ideal para quienes comienzan a ahorrar e invertir de forma gradual.</li>
+        <li><strong>Plan Intermedio ($2,000 al año aprox.)</strong>: Perfecto para consolidar tus hábitos de ahorro y dar pasos firmes hacia un futuro financiero más sólido.</li>
+        <li><strong>Plan Avanzado ($7,500 al año aprox.)</strong>: Para aquellos que buscan un crecimiento acelerado con estrategias diversificadas y asesoramiento personalizado.</li>
+        <li><strong>Plan Premium (más de $10,000 al año)</strong>: Un paquete completo para construir una cartera robusta que maximice tus rendimientos a largo plazo.</li>
+      </ul>
+      <p>Al suscribirte a <strong>Cartera Retiro 2025</strong> obtendrás acceso a:</p>
+      <ul>
+        <li>Cursos y tutoriales paso a paso para crear y gestionar tu cartera.</li>
+        <li>Recomendaciones periódicas y personalizadas basadas en el análisis del mercado.</li>
+        <li>Herramientas interactivas para simular y proyectar tus inversiones.</li>
+        <li>Asesoramiento experto para diversificar y optimizar tus activos.</li>
+      </ul>
+    </div>
+        <button id="Suscribirse">Suscribirse Ahora</button>
+
+    </section>
+    
+
+    <section class="tabla-activos">
+      <h2>Distribución de Activos</h2>
+      <table>
+        <tr>
+          <th>Activo</th>
+          <th>Porcentaje</th>
+          <th>Rentabilidad Anual</th>
+        </tr>
+        <tr>
+          <td>Bonos del Estado</td>
+          <td>50%</td>
+          <td>4.5%</td>
+        </tr>
+        <tr>
+          <td>Fondos de Inversión</td>
+          <td>30%</td>
+          <td>6.0%</td>
+        </tr>
+        <tr>
+          <td>Acciones Defensivas</td>
+          <td>15%</td>
+          <td>5.0%</td>
+        </tr>
+        <tr>
+          <td>Liquidez</td>
+          <td>5%</td>
+          <td>1.2%</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="grafico">
+        <h2>Evolución de la Cartera</h2>
+        <p>Calcula el rendimiento de tu inversión a lo largo de un año, tomando en cuenta tu aporte anual y un rendimiento estimado entre el 7.5% y 10% anual. A continuación, te mostramos cómo crecería tu inversión según el plan que elijas.</p>
+        
+        <div class="grafico-container">
+          <canvas id="graficoRendimiento"></canvas>
+        </div>
+      
+        <div class="grafico-info">
+          <h3>Simulación de Crecimiento</h3>
+          <p><strong>Plan Básico ($500 al año aprox.)</strong>: Aportando $500, tu inversión crecería de la siguiente manera:</p>
+          <ul>
+            <li><strong>Rendimiento 7.5% anual:</strong> $537.50 al final del año.</li>
+            <li><strong>Rendimiento 10% anual:</strong> $550 al final del año.</li>
+          </ul>
+      
+          <p><strong>Plan Intermedio ($2,000 al año aprox.)</strong>: Aportando $2,000, tu inversión crecería de la siguiente manera:</p>
+          <ul>
+            <li><strong>Rendimiento 7.5% anual:</strong> $2,150 al final del año.</li>
+            <li><strong>Rendimiento 10% anual:</strong> $2,200 al final del año.</li>
+          </ul>
+      
+          <p><strong>Plan Avanzado ($7,500 al año aprox.)</strong>: Aportando $7,500, tu inversión crecería de la siguiente manera:</p>
+          <ul>
+            <li><strong>Rendimiento 7.5% anual:</strong> $8,062.50 al final del año.</li>
+            <li><strong>Rendimiento 10% anual:</strong> $8,250 al final del año.</li>
+          </ul>
+      
+          <p><strong>Plan Premium (más de $10,000 al año)</strong>: Aportando más de $10,000, tu inversión crecería de la siguiente manera:</p>
+          <ul>
+            <li><strong>Rendimiento 7.5% anual:</strong> $10,750 al final del año.</li>
+            <li><strong>Rendimiento 10% anual:</strong> $11,000 al final del año.</li>
+          </ul>
+        </div>
+      
+        <button id="verDetalles">Ver Detalles</button>
+      </section>
+      
+  </main>
+  <script src="grafico.js"></script>
+</body>
+</html>

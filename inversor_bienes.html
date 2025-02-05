@@ -18,13 +18,11 @@
   <nav>
     <ul>
       <li><a href="index.html" onclick="loadSection('economy')">Volver a Inicio</a></li>
-      <button onclick="irAPagina()">SLS Pilar III</button>
+      <button onclick="irAPagina()">SLS Pilar IV</button>
     </ul>
   </nav>
 
   <main>
-
-
     <section class="inversiones">
       <h2>Tipo de Inversiones</h2>
 
@@ -34,75 +32,91 @@
       </div>
 
       <div class="tradingview-widget-container">
-      <div class="tradingview-widget-container__widget"></div>
-      <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Siga los mercados en TradingView</span></a></div>
-      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
-      {
-        "symbols": [
-          [
-            "FRED:MSPUS|ALL"
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Siga los mercados en TradingView</span></a></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+        {
+          "symbols": [
+            [
+              "FRED:MSPUS|ALL"
+            ],
+            [
+              "FRED:HSN1F|ALL"
+            ],
+            [
+              "FRED:HOSMEDUSM052N|ALL"
+            ]
           ],
-          [
-            "FRED:HSN1F|ALL"
+          "chartOnly": false,
+          "width": 2000,
+          "height": 720,
+          "locale": "es",
+          "colorTheme": "light",
+          "autosize": false,
+          "showVolume": false,
+          "showMA": false,
+          "hideDateRanges": false,
+          "hideMarketStatus": false,
+          "hideSymbolLogo": false,
+          "scalePosition": "right",
+          "scaleMode": "Normal",
+          "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+          "fontSize": "10",
+          "noTimeScale": false,
+          "valuesTracking": "1",
+          "changeMode": "price-and-percent",
+          "chartType": "area",
+          "maLineColor": "#2962FF",
+          "maLineWidth": 1,
+          "maLength": 9,
+          "fontColor": "rgba(19, 23, 34, 1)",
+          "lineWidth": 2,
+          "lineType": 0,
+          "dateRanges": [
+            "1d|1",
+            "1m|30",
+            "3m|60",
+            "12m|1D",
+            "60m|1W",
+            "all|1M"
           ],
-          [
-            "FRED:HOSMEDUSM052N|ALL"
-          ]
-        ],
-        "chartOnly": false,
-        "width": 2000,
-        "height": 720,
-        "locale": "es",
-        "colorTheme": "light",
-        "autosize": false,
-        "showVolume": false,
-        "showMA": false,
-        "hideDateRanges": false,
-        "hideMarketStatus": false,
-        "hideSymbolLogo": false,
-        "scalePosition": "right",
-        "scaleMode": "Normal",
-        "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
-        "fontSize": "10",
-        "noTimeScale": false,
-        "valuesTracking": "1",
-        "changeMode": "price-and-percent",
-        "chartType": "area",
-        "maLineColor": "#2962FF",
-        "maLineWidth": 1,
-        "maLength": 9,
-        "fontColor": "rgba(19, 23, 34, 1)",
-        "lineWidth": 2,
-        "lineType": 0,
-        "dateRanges": [
-          "1d|1",
-          "1m|30",
-          "3m|60",
-          "12m|1D",
-          "60m|1W",
-          "all|1M"
-        ],
-        "lineColor": "rgba(56, 142, 60, 1)",
-        "downColor": "#f7525f",
-        "upColor": "#22ab94"
-      }
-      </script>
-    </div>
+          "lineColor": "rgba(56, 142, 60, 1)",
+          "downColor": "#f7525f",
+          "upColor": "#22ab94"
+        }
+        </script>
+      </div>
 
-    <section class="oportunidades">
-      <h2>Oportunidades de Inversión Actuales</h2>
-      <div class="oportunidades-container">
-        
-        <div class="oportunidad-card">
-          <img src="sls3.webp" alt="SLS Pilar III">
-          <h3>SLS Pilar III</h3>
-          <p>Descubre esta oportunidad activa de inversión - SLS Pilar III.</p>
-          <p>Fondeado al 70%<p>
-          <div class="progress-container">
-            <div class="progress-bar" style="width: 70%;"></div>
+      <section class="oportunidades">
+        <h2>Oportunidades de Inversión Actuales</h2>
+        <div class="oportunidades-container">
+          
+          <!-- Nueva oportunidad SLS Pilar IV -->
+          <div class="oportunidad-card">
+            <img src="sls4.webp" alt="SLS Pilar IV">
+            <h3>SLS Pilar IV</h3>
+            <p>Descubre esta nueva oportunidad de inversión en SLS Pilar IV.</p>
+            <p>Fondeado al 30%</p>
+            <div class="progress-container">
+              <div class="progress-bar" style="width: 30%;"></div>
+            </div>
+
+            <button onclick="irAPaginaPilar4()">Explorar Inversión</button>
           </div>
 
-          <button onclick="irAPaginaPilar3()">Explorar Inversión</button>
+          <!-- Oportunidad en proceso SLS Pilar III -->
+          <div class="oportunidad-card">
+            <img src="sls3.webp" alt="SLS Pilar III">
+            <h3>SLS Pilar III</h3>
+            <p>Este proyecto está completamente fondeado.</p>
+            <p>Fondeado al 100%</p>
+            <div class="progress-container">
+              <div class="progress-bar" style="width: 100%;"></div>
+            </div>
+
+            <button onclick="irAPaginaPilar3()">Explorar Inversión</button>
+          </div>
+
         </div>
 
         <h2>Oportunidades de Inversión Finalizadas</h2>
@@ -111,7 +125,7 @@
           <h3>SLS Pilar II</h3>
           <p>Este proyecto ha sido completamente fondeado y está finalizado.</p>
         </div>
-      </div>
+      </section>
     </section>
   </main>
 

@@ -1,7 +1,7 @@
 function irAPagina() {
-      window.location.href = 'slspilariii.html';
+      window.location.href = 'slspilariv.html';
     }
 
-    function irAPaginaPilar3() {
-  window.location.href = 'slspilariii.html'; 
+    function irAPaginaPilar4() {
+  window.location.href = 'slspilariv.html'; 
 }

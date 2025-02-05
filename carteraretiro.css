@@ -1,0 +1,182 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background: linear-gradient(to right, #ff4d4d, #cc0000);
+    color: #fff;
+    text-align: center;
+    padding: 1.2em 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+main {
+    max-width: 85%;
+    margin: 40px auto;
+    padding: 2em;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* Sección de descripción */
+.descripcion {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Sección de plan de retiro */
+.plan-info h2 {
+    color: #cc0000;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.plan-info p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.plan-info ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.plan-info ul li {
+    margin-bottom: 10px;
+}
+
+.plan-info button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    background: #cc0000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.plan-info button:hover {
+    background: #990000;
+}
+
+/* Tabla de activos */
+.tabla-activos table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-activos th,
+.tabla-activos td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-activos th {
+    background: #ff4d4d;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Sección de gráfico */
+.grafico {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.grafico-container {
+    margin-top: 15px;
+}
+
+.grafico-info {
+    background: #ffe6e6;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: -135px;
+}
+
+.grafico-info h3 {
+    color: #cc0000;
+    margin-bottom: 10px;
+}
+
+.grafico-info ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.grafico-info ul li {
+    margin-bottom: 8px;
+}
+
+/* Botón para ver detalles */
+#verDetalles {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    background: #cc0000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#verDetalles:hover {
+    background: #990000;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background: linear-gradient(to right, #ff4d4d, #cc0000);
+    color: #fff;
+    text-align: center;
+    padding: 0.8em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
