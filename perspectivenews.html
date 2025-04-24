@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perspective News</title>
+  <link rel="stylesheet" href="perspectivenews.css" />
+</head>
+<body>
+    <header>
+        <h1>PerspectiveNews</h1>
+    </header>
+    
+    <nav>
+        <ul id="mainNav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><button onclick="scrollToSection('global')">Global</button></li>
+            <li><button onclick="scrollToSection('calendario')">Calendario</button></li>
+            <li><button onclick="scrollToSection('eventos')">Eventos</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="news-container"></div>
+    </main>
+
+    <div id="popup" class="modal" style="display: none;">
+        <div class="modal-content" id="popup-content">
+            <span class="close-modal" onclick="document.getElementById('popup').style.display='none'">&times;</span>
+            <img src="noticia.jpg" alt="Noticia">
+            <h2>Título de la noticia</h2>
+            <p>Resumen breve de la noticia...</p>
+            <button class="view-full-news-button">Ver noticia completa</button>
+        </div>
+    </div>
+
+    <script src="perspectivenews.js"></script>
+</body>
+</html>

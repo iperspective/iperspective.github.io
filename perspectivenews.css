@@ -1,0 +1,320 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #141e30, #243b55);
+    color: #fff;
+    min-height: 100vh;
+    padding: 0px;
+  }
+
+  header {
+    background: linear-gradient(to right, #3174fad0, #1283e5);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    background-color: #130d4538;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    margin-top: 5px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 5px;
+    background: linear-gradient(to right, #6699ffa8, #3366ff);
+    color: #fff;
+    font-size: 1.5vh;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #45a049;
+}
+
+nav a.active, nav button.active {
+    background-color: #1a8cff;
+    font-weight: bold;
+  }
+  
+
+#mainNav button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4vh;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#mainNav button:hover {
+    background-color: #45a049;
+}
+  
+  /* Contenedor principal */
+  #news-container {
+    display: flex;
+    width: 75vw;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Tarjetas de noticia */
+  .news-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: grab;
+    margin-bottom: 15px;
+  }
+  
+  .news-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .news-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .news-card p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 15px;
+  }
+  
+  .news-card a {
+    color: #00c3ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .news-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Título de sección */
+  .section-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #ffffff;
+    border-left: 5px solid #00c3ff;
+    padding-left: 10px;
+  }
+  
+  /* Modal emergente */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #1f2a38;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 90%;
+    color: #fff;
+    position: relative;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+
+  .modal-content p {
+    font-size: 16px;
+    color: #e8e8e8;
+    margin-bottom: 20px;
+  }
+
+  .modal-content a {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.modal-content a:hover {
+    color: #0056b3;
+}
+
+  .modal-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: block;
+  } 
+  
+button {
+    background: linear-gradient(145deg, #2eb333, #17bc1f);  /* Gradiente de verde */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover para los botones */
+button:hover {
+    background-color: #3e8e41;
+    transform: scale(1.1);  /* Aumenta el tamaño ligeramente */
+}
+
+/* Estilo para los botones de navegación */
+nav button {
+    background: linear-gradient(145deg, #3498db, #2980b9);  /* Gradiente azul */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para los botones de navegación */
+nav button:hover {
+    background-color: #1d6fa5;
+}
+
+/* Estilo para el botón "Ver noticia completa" dentro del modal */
+.view-full-news-button {
+    background: linear-gradient(145deg, #f39c12, #e67e22);  /* Gradiente naranja */
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    margin: 20px auto;  /* Centra el botón */
+    text-align: center;  /* Asegura que el texto se centre */
+    width: 100%;  /* Asegura que ocupe el espacio disponible */
+}
+
+/* Efecto hover para el botón "Ver noticia completa" */
+.view-full-news-button:hover {
+    background-color: #d35400;
+    transform: scale(1.1);  /* Aumenta el tamaño ligeramente */
+}
+
+
+/* Estilo para el botón de cierre del modal */
+.close-modal {
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Efecto hover para el botón de cierre */
+.close-modal:hover {
+    color: #e74c3c;  /* Rojo al pasar el mouse */
+}
+
+  
+  /* Estilo para el botón de "Ver noticia completa" (centrado) */
+  .modal-content .view-full-news-button {
+    background: linear-gradient(to right, #00c3ff, #0078d7);
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin: 20px auto; /* Esto centra el botón */
+  }
+  
+  .modal-content .view-full-news-button:hover {
+    background: linear-gradient(to right, #0078d7, #005ea3);
+    transform: scale(1.05);
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }  
+  
+  /* Animación al mostrar noticias */
+  @keyframes fadeIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .news-card {
+      padding: 15px;
+    }
+  
+    .news-card h2 {
+      font-size: 1.1rem;
+    }
+  
+    .news-card p {
+      font-size: 0.95rem;
+    }
+  
+    .section-title {
+      font-size: 1.3rem;
+    }
+  }
+  
