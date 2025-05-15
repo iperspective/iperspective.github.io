@@ -21,13 +21,18 @@
     </nav>
 
     <main>
+        <section id="latest-videos">
+            <h2 class="section-title">Últimos Videos</h2>
+            <div id="videos-container"></div>
+        </section>
+    
         <div id="news-container"></div>
-    </main>
+    </main>    
 
     <div id="popup" class="modal" style="display: none;">
         <div class="modal-content" id="popup-content">
             <span class="close-modal" onclick="document.getElementById('popup').style.display='none'">&times;</span>
-            <img src="noticia.jpg" alt="Noticia">
+            <img src="noticia.jpg" alt="Noticia" />
             <h2>Título de la noticia</h2>
             <p>Resumen breve de la noticia...</p>
             <button class="view-full-news-button">Ver noticia completa</button>

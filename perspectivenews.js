@@ -1,6 +1,9 @@
 const API_KEY = "pub_828050e087803e1bc8ad671e224716fdad8c1";
 const API_BASE = "https://newsdata.io/api/1/news";
 
+const YOUTUBE_API_KEY = "AIzaSyB3tWv-sYEq1-eGkHT3_0k27j9qWOntl24";
+const YOUTUBE_CHANNEL_ID = "UCFx8XyAgtoHyS38fXh1LI1g";
+
 async function fetchNews(query) {
   const url = `${API_BASE}?apikey=${API_KEY}&q=${query}&language=es`;
   try {
@@ -16,13 +19,15 @@ async function fetchNews(query) {
 
 function createNewsCard(article) {
   const description = article.description ? article.description.slice(0, 160) : "Sin descripción disponible.";
-  return `
-    <div class="news-card">
-      <h2>${article.title}</h2>
-      <p>${description}...</p>
-      <button onclick='showPopup(${JSON.stringify(article).replace(/'/g, "\\'")})'>Leer más</button>
-    </div>
+  const card = document.createElement("div");
+  card.className = "news-card";
+  card.innerHTML = `
+    <h2>${article.title}</h2>
+    <p>${description}...</p>
+    <button>Leer más</button>
   `;
+  card.querySelector("button").addEventListener("click", () => showPopup(article));
+  return card;
 }
 
 function showPopup(article) {
@@ -31,11 +36,11 @@ function showPopup(article) {
 
   const imageHtml = article.image_url ? `<img src="${article.image_url}" alt="imagen noticia"/>` : '';
   popupContent.innerHTML = `
+    <span class="close-modal" onclick="closePopup()">&times;</span>
     <h2>${article.title}</h2>
     ${imageHtml}
     <p>${article.description || "Sin descripción completa."}</p>
-    <a href="${article.link}" target="_blank">Ver noticia completa</a>
-    <button onclick="closePopup()">Cerrar</button>
+    <a href="${article.link}" target="_blank" rel="noopener">Ver noticia completa</a>
   `;
 
   popup.style.display = "flex";
@@ -45,55 +50,85 @@ function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
 
+document.getElementById("popup").addEventListener("click", (e) => {
+  if (e.target.id === "popup") closePopup();
+});
+
 function createSection(query, articles) {
   const section = document.createElement("div");
-  section.innerHTML = `
-    <div class="section-title">Noticias sobre ${query}</div>
-    <div class="news-section">
-      ${articles.map(createNewsCard).join("")}
-    </div>
-  `;
+  section.classList.add("news-section-container");
+
+  const title = document.createElement("div");
+  title.className = "section-title";
+  title.textContent = `Noticias sobre ${query}`;
+  section.appendChild(title);
+
+  const newsSection = document.createElement("div");
+  newsSection.className = "news-section";
+
+  articles.forEach(article => {
+    newsSection.appendChild(createNewsCard(article));
+  });
+
+  section.appendChild(newsSection);
   return section;
 }
 
-async function renderNews() {
-  const container = document.getElementById("news-container");
-  container.innerHTML = "";
-
-  const cacheKey = "cached-news";
-  const cacheTimeKey = "cached-news-time";
-  const now = Date.now();
-  const cacheTime = localStorage.getItem(cacheTimeKey);
-
-  // Verifica si los datos están en caché y si es válido para mostrar
-  if (cacheTime && now - cacheTime < 5 * 60 * 1000) {
-    const cached = JSON.parse(localStorage.getItem(cacheKey));
-    cached.forEach(section => {
-      container.appendChild(createSection(section.query, section.articles));
-    });
-    return;
+async function fetchYouTubeVideos() {
+  const url = `https://www.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KEY}&channelId=${YOUTUBE_CHANNEL_ID}&part=snippet,id&order=date&maxResults=3`;
+  try {
+    const res = await fetch(url);
+    const data = await res.json();
+    if (!data.items) throw new Error("No se encontraron videos");
+    return data.items;
+  } catch (error) {
+    console.error("Error al cargar videos de YouTube:", error);
+    return [];
   }
-
-  const queries = ["economía", "deportes", "tecnología"];
-  const cachedSections = [];
-
-  for (const query of queries) {
-    const articles = await fetchNews(query);
-    cachedSections.push({ query, articles });
-    container.appendChild(createSection(query, articles));
-  }
-
-  localStorage.setItem(cacheKey, JSON.stringify(cachedSections));
-  localStorage.setItem(cacheTimeKey, now.toString());
-
-  // Animación de actualización de noticias
-  container.classList.add("fade-in");
-  setTimeout(() => {
-    container.classList.remove("fade-in");
-  }, 500);
 }
 
-// Actualiza las noticias cada 5 minutos
-setInterval(renderNews, 5 * 60 * 1000);
+function createVideoCard(video) {
+  const videoId = video.id.videoId;
+  const title = video.snippet.title;
+  const thumbnail = video.snippet.thumbnails.medium.url;
 
-document.addEventListener("DOMContentLoaded", renderNews);
+  const card = document.createElement("div");
+  card.className = "video-card";
+  card.innerHTML = `
+    <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank" rel="noopener">
+      <img src="${thumbnail}" alt="Miniatura video"/>
+      <h3>${title}</h3>
+    </a>
+  `;
+  return card;
+}
+
+async function renderNewsAndVideos() {
+  // Noticias
+  const newsContainer = document.getElementById("news-container");
+  newsContainer.innerHTML = "";
+
+  const queries = ["economía", "deportes", "tecnología"];
+  for (const query of queries) {
+    const articles = await fetchNews(query);
+    if (articles.length) {
+      newsContainer.appendChild(createSection(query, articles));
+    }
+  }
+
+  // Videos
+  const videosContainer = document.getElementById("videos-container");
+  videosContainer.innerHTML = "";  // Limpiar para evitar duplicados
+  const videos = await fetchYouTubeVideos();
+  if (videos.length > 0) {
+    videos.forEach(video => {
+      videosContainer.appendChild(createVideoCard(video));
+    });
+  }
+}
+
+// Recarga cada 5 minutos
+setInterval(renderNewsAndVideos, 5 * 60 * 1000);
+
+// Al cargar DOM
+document.addEventListener("DOMContentLoaded", renderNewsAndVideos);

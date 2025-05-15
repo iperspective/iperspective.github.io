@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reportes TRANSENER - Perspective App</title>
+  <link rel="stylesheet" href="tran.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Perspective App</h1>
+  </header>
+
+  <nav aria-label="Navegación principal">
+    <ul id="mainNav" class="main-nav">
+      <li><a href="reportes.html" class="nav-link">Volver a Reportes</a></li>
+      <li><a href="economy.html" class="nav-link">Economía</a></li>
+      <li><a href="index.html" class="nav-link">Inicio</a></li>
+    </ul>
+  </nav>
+
+  <main class="content-wrapper">
+    <h2 class="section-title">Reportes de TRANSENER</h2>
+
+    <article
+      class="report-card"
+      role="button"
+      tabindex="0"
+      onclick="openReport('reporte-tran01.html')"
+      onkeypress="if(event.key==='Enter'){openReport('reporte-tran01.html')}"
+      aria-label="Abrir reporte financiero de mayo 2024"
+    >
+      <h3>Reporte Financiero - Mayo 2024</h3>
+      <time datetime="2025-05-15" class="report-date">Publicado: 15 de mayo de 2025</time>
+      <p>
+        Resumen del desempeño financiero de Transener, incluyendo ingresos,
+        EBITDA, inversiones y situación macroeconómica.
+      </p>
+    </article>
+
+    <section class="cotizacion">
+        <h2 class="section-title">Cotización en Tiempo Real</h2>
+      
+        <div class="cards">
+          <div class="card">
+            <h3>Precio en Pesos (ARS)</h3>
+            <div id="widget-precio-ars">
+              
+              <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright">
+                  <a href="https://es.tradingview.com/" rel="noopener nofollow" target="_blank">
+                    <span class="blue-text">Siga los mercados en TradingView</span>
+                  </a>
+                </div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                {
+                  "symbol": "BCBA:TRAN",
+                  "width": "100%",
+                  "isTransparent": true,
+                  "colorTheme": "light",
+                  "locale": "es"
+                }
+                </script>
+              </div>
+            </div>
+          </div>
+      
+          <div class="card">
+            <h3>Precio en Dólares (USD)</h3>
+            <div id="widget-precio-usd">
+              
+              <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright">
+                  <a href="https://es.tradingview.com/" rel="noopener nofollow" target="_blank">
+                    <span class="blue-text">Siga los mercados en TradingView</span>
+                  </a>
+                </div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                {
+                  "symbol": "OTC:TRSNF",
+                  "width": "100%",
+                  "isTransparent": true,
+                  "colorTheme": "light",
+                  "locale": "es"
+                }
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      <div class="chart-container">
+        <h3>Evolución en ARS</h3>
+        <div id="widget-ars" style="height: 400px; width: 100%;"></div>
+      </div>
+      
+      <div class="chart-container">
+        <h3>Evolución en USD</h3>
+        <div id="widget-usd" style="height: 400px; width: 100%;"></div>
+      </div>
+      
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Perspective App</p>
+  </footer>
+
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script src="tran.js"></script>
+</body>
+</html>
