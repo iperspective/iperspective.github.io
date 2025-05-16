@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    height: 180vh;
+}
+
+header {
+    background-color: #7f00ff;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #7f00ff;
+    font-weight: bold;
+}
+
+main {
+    max-width: 100%;
+    margin: 2em auto;
+    padding: 2em;
+    height: 150vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #7f00ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.report-card {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    transition: box-shadow 0.3s ease;
+}
+
+.report-card:hover {
+    box-shadow: 0 0 10px rgba(127, 0, 255, 0.2);
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.card {
+    background-color: #f2f2f2;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.chart-container {
+    margin-top: 2em;
+    height: 400px;
+    max-width: 100%;
+}
+
+.section-title {
+    color: #7f00ff;
+}
+
+footer {
+    background: linear-gradient(to right, #ff6666, #ff3333);
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

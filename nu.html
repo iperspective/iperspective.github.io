@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reportes NUBANK - Perspective App</title>
+  <link rel="stylesheet" href="nu.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Perspective App</h1>
+  </header>
+
+  <nav aria-label="Navegación principal">
+    <ul id="mainNav" class="main-nav">
+      <li><a href="reportes.html" class="nav-link">Volver a Reportes</a></li>
+      <li><a href="economy.html" class="nav-link">Economía</a></li>
+      <li><a href="index.html" class="nav-link">Inicio</a></li>
+    </ul>
+  </nav>
+
+  <main class="content-wrapper">
+    <h2 class="section-title">Reportes de NUBANK</h2>
+
+    <article
+      class="report-card"
+      role="button"
+      tabindex="0"
+      onclick="openReport('reporte-nu01.html')"
+      onkeypress="if(event.key==='Enter'){openReport('reporte-nu01.html')}"
+      aria-label="Abrir reporte financiero de mayo 2025"
+    >
+      <h3>Reporte Financiero - Mayo 2025</h3>
+      <time datetime="2025-05-15" class="report-date">Publicado: 15 de mayo de 2025</time>
+      <p>
+        Detalles sobre el crecimiento de Nubank, ingresos trimestrales, cantidad de usuarios y expansión en Latinoamérica.
+      </p>
+    </article>
+
+    <section class="cotizacion">
+      <h2 class="section-title">Cotización en Tiempo Real</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Precio en NYSE (USD)</h3>
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright">
+              <a href="https://es.tradingview.com/" rel="noopener nofollow" target="_blank">
+                <span class="blue-text"></span>
+              </a>
+            </div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+            {
+              "symbol": "NYSE:NU",
+              "width": "100%",
+              "isTransparent": true,
+              "colorTheme": "light",
+              "locale": "es"
+            }
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="chart-container">
+      <h3>Evolución en USD</h3>
+      <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+            <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+            <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+            {
+            "autosize": true,
+            "symbol": "NYSE:NU",
+            "interval": "D",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "es",
+            "allow_symbol_change": true,
+            "support_host": "https://www.tradingview.com"
+        }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Perspective App</p>
+  </footer>
+
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script src="nu.js"></script>
+</body>
+</html>
