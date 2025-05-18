@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
-    height: 250vh;
+    height: 150vh;
 }
 
 header {
@@ -55,10 +55,49 @@ main {
     max-width: 90%;
     margin: 20px auto;
     padding: 1em;
-    height: 250vh;
+    height: 200vh;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.empresas-especiales {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #f5f5f5;
+    border-top: 2px solid #ccc;
+}
+
+.empresas-especiales h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+}
+
+.empresas-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.empresa-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.empresa-card:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
 
 .heatmap-widget {
     width: 100%;

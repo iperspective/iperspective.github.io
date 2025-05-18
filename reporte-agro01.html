@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reporte AGRO 1T25</title>
+  <link rel="stylesheet" href="reporte-agro01.css" />
+</head>
+<body>
+  <header>
+    <h1>PerspectiveApp - Reporte AGRO - 1T25</h1>
+    <p class="fuente">Fuente: Quicktrade</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="reportes.html" class="active">Reportes</a></li>
+      <li><a href="agro.html">Agrometal</a></li>
+      <li><a href="economy.html">Economía</a></li>
+      <li><a href="inversor.html">Inversiones</a></li>
+    </ul>
+  </nav>  
+
+  <section class="resumen">
+    <h2>Puntos clave del reporte</h2>
+    <ul>
+      <li>EBITDA ajustado total cayó 60,1% a/a a USD 35,9mn, con fuerte retroceso en segmentos SE&E y Agropecuario.</li>
+      <li>Ingresos consolidados crecieron 24,3% impulsados por mejores volúmenes y precios en etanol y lácteos.</li>
+      <li>Se espera recuperación en Brasil para el 2S25, con mejor rendimiento en caña y precios sostenidos en etanol.</li>
+    </ul>
+  </section>
+
+  <section class="detalles">
+    <h2>Detalles financieros y operativos</h2>
+    <p>El EBITDA ajustado del segmento SE&E (Azúcar, Etanol & Energía) alcanzó USD 29,9mn, retrocediendo 42,4% a/a por pérdida en valor de activos biológicos y menores volúmenes de azúcar, parcialmente compensado por recuperación en etanol Brasil.</p>
+    <p>El segmento Agropecuario mostró una caída de EBITDA del 62,2% a/a, impactado por costos en USD y precios bajos del arroz.</p>
+    <p>Ingresos consolidados crecieron a USD 325,5mn (+24,3% a/a), pero el margen operativo y EBITDA se redujeron por mayores costos y gastos administrativos.</p>
+    <p>El flujo operativo (FFO) y el cash flow (CFO) mostraron deterioro, con deuda neta aumentando a 1,7x EBITDA.</p>
+    <p>Perspectivas: mejora en molienda de caña en Brasil y condiciones favorables para etanol, mientras que en Agropecuario se monitorean precios y costos.</p>
+  </section>
+
+  <section class="tabla-valores">
+    <h2>Resumen de resultados (USD mn)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Concepto</th>
+          <th>1T25</th>
+          <th>1T24</th>
+          <th>Variación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Ingresos</td><td>325,5</td><td>261,8</td><td>24,3%</td></tr>
+        <tr><td>Resultado cambios valor activos biológicos</td><td>23,6</td><td>63,1</td><td>-62,7%</td></tr>
+        <tr><td>Margen actividades manufactureras y agrícolas</td><td>74,1</td><td>110,5</td><td>-33,0%</td></tr>
+        <tr><td>Gastos admin. y comercialización</td><td>69,4</td><td>50,3</td><td>38,1%</td></tr>
+        <tr><td>Resultado operativo</td><td>3,6</td><td>39,8</td><td>-90,9%</td></tr>
+        <tr><td>EBITDA ajustado</td><td>35,9</td><td>90,1</td><td>-60,1%</td></tr>
+        <tr><td>Margen EBITDA</td><td>11,0%</td><td>34,4%</td><td>-23,4pp</td></tr>
+        <tr><td>Resultado financiero neto</td><td>11,8</td><td>20,5</td><td>-42,2%</td></tr>
+        <tr><td>Resultado del período</td><td>18,7</td><td>47,3</td><td>-60,5%</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="chart-container">
+    <h3>Evolución en ARS</h3>
+    <div id="widget-ars" style="height: 400px; width: 100%;"></div>
+  </div>
+  
+
+  <section class="contacto-final">
+    <p>Reporte elaborado por Grupo SBS - <a href="mailto:acc@gruposbs.com">acc@gruposbs.com</a></p>
+  </section>
+
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script src="reporte-agro01.js"></script>
+</body>
+</html>

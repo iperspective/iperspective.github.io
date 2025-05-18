@@ -44,11 +44,12 @@ nav a:hover {
 }
 
 main {
-    max-width: 80%;
+    max-width: 85%;
     margin: 20px auto;
     padding: 1em;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 120px;
 }
 
 .reporte-card {

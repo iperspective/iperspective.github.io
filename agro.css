@@ -1,0 +1,158 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background: linear-gradient(to right, #ff6666, #ff3333);
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav {
+  background-color: #fff;
+  padding: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  background: linear-gradient(to right, #ff6666, #ff3333);
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #cc0000;
+}
+
+main {
+  max-width: 85%;
+  margin: 20px auto;
+  padding: 1em;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 120px;
+}
+
+h1, h3 {
+  color: #f8f8f8;
+}
+
+h2, h3 {
+    color: #000000;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 20px;
+  max-width: 95%;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  border-color: #FFC000;
+  box-shadow: 0 4px 10px rgba(58, 157, 35, 0.2);
+}
+
+.button {
+  background-color: #FFD700;
+  color: #2E7D1D;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #FFC000;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #151515;
+}
+
+.report-card {
+  background-color: #f8f9fa;
+  border: 1px solid #dcdcdc;
+  border-left: 6px solid #004880; /* destaca como reporte */
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 95%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.report-card:hover,
+.report-card:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+.report-card h3 {
+  margin-top: 0;
+  color: #003366;
+  font-size: 1.25rem;
+}
+
+.report-card .report-date {
+  display: block;
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.report-card p {
+  margin: 0;
+  color: #333;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #3A9D23;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
