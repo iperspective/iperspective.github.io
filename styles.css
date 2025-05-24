@@ -533,6 +533,55 @@ footer {
     background-color: #2980b9;
 }
 
+#carousel-container {
+    width: 100%;
+    max-width: 100%;
+    
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-item {
+    flex: 1 0 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+  }
+  
+  .carousel-item .card {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+
 .card {
     background-color: #e41d520c;
     padding: 40px;
@@ -543,12 +592,12 @@ footer {
 }
 
 .card h3 {
-    color: #3498db;
+    color: #ffffff;
     font-size: 2.8vh;
 }
 
 .card p {
-    color: #555;
+    color: #ffffff;
     margin-top: 5vh;
     font-size: 2vh;
 }

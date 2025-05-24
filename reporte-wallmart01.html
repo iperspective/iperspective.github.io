@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reporte Walmart - 1T26</title>
+  <link rel="stylesheet" href="reporte-wallmart01.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Reporte Walmart Inc. - 1T26</h1>
+    <p class="date">PerspectiveApp | 24 de mayo de 2025</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="reportes.html" class="active">Reportes</a></li>
+      <li><a href="wallmart.html">Walmart</a></li>
+      <li><a href="economy.html">Economía</a></li>
+      <li><a href="inversor.html">Inversiones</a></li>
+    </ul>
+  </nav>  
+
+  <main>
+    <section class="summary">
+      <h2>Resumen Ejecutivo</h2>
+      <p>
+        Walmart reportó ingresos totales por USD 165,6 mil millones en el primer trimestre de 2026, creciendo un 2,5% interanual y alineado con las expectativas del mercado. Destacó un fuerte crecimiento del 22% en las ventas netas de comercio electrónico y un aumento del 14,8% en ingresos por cuotas de membresía a nivel mundial.
+      </p>
+    </section>
+
+    <section class="financials">
+      <h2>Principales Indicadores Financieros (USD mil millones)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Concepto</th>
+            <th>1T26</th>
+            <th>1T25</th>
+            <th>Variación (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Ingresos Totales</td><td>165,6</td><td>161,7</td><td>+2,5%</td></tr>
+          <tr><td>Ventas E-commerce</td><td>--</td><td>--</td><td>+22%</td></tr>
+          <tr><td>Ingresos por Membresías</td><td>--</td><td>--</td><td>+14,8%</td></tr>
+          <tr><td>Margen Neto</td><td>2,8%</td><td>3,0%</td><td>-0,2 p.p.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="charts">
+      <h2>Visualización Gráfica</h2>
+      <div class="chart-container">
+        <canvas id="barChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <canvas id="pieChart"></canvas>
+      </div>
+    </section>
+
+    <section class="analysis">
+      <h2>Detalle del Desempeño</h2>
+      <p><strong>Ventas:</strong> Las ventas totales mostraron un crecimiento moderado del 2,5% impulsado por el comercio electrónico, que creció un 22% impulsando el segmento digital de la compañía.</p>
+      <p><strong>Presión por Aranceles:</strong> La tensión comercial entre EE.UU. y China continúa generando presión de costos, especialmente en categorías como electrónica, juguetes y alimentos importados, impactando los márgenes estrechos del retail.</p>
+      <p><strong>Estrategias:</strong> Walmart implementa ajustes en precios y optimización de su cadena de suministro para mitigar el impacto de aranceles, con expectativas de que futuros acuerdos comerciales alivien esta carga.</p>
+    </section>
+
+    <section class="cash-flow">
+      <h2>Flujo de Caja y Liquidez</h2>
+      <ul>
+        <li>El flujo operativo se mantuvo estable, respaldado por un sólido desempeño del comercio electrónico.</li>
+        <li>La caja finalizó con un aumento marginal respecto al trimestre anterior, manteniendo niveles saludables para inversiones y operaciones.</li>
+      </ul>
+    </section>
+
+    <section class="prospects">
+      <h2>Perspectivas y Desafíos</h2>
+      <p>Se espera que Walmart continúe adaptando su modelo de negocio para contrarrestar los efectos de los aranceles internacionales y mantener el crecimiento en comercio digital, impulsado por la creciente membresía y expansión en nuevas categorías.</p>
+    </section>
+
+    <section class="valuation">
+      <h2>Valoración y Recomendaciones</h2>
+      <p>Los analistas proyectan un crecimiento moderado en ingresos y márgenes para Walmart en 2026, con foco en la mejora de eficiencia y expansión digital. El potencial de valorización se mantiene estable, condicionado a la evolución del entorno comercial global.</p>
+    </section>
+
+    <div id="widget-usd" style="height: 400px; width: 100%;"></div>
+
+  </main>
+
+  <footer>
+    &copy; 2025 PerspectiveApp - Walmart Inc. - Fuentes: QuickTrade, SBS Research, Reuters
+  </footer>  
+
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script src="reporte-wallmart01.js"></script>
+</body>
+</html>

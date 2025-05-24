@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forex - Seguimiento de Divisas</title>
+  <link rel="stylesheet" href="forex.css">
+</head>
+<body>
+  <header>
+    <h1>Mercado Forex</h1>
+  </header>
+  <nav>
+    <ul id="mainNav">
+        <li><a href="index.html" onclick="loadSection('economy')">Volver a Inicio</a></li>
+        <li><a href="economy.html">Economía</a></li>
+        <li><a href="economy_calendar.html">Calendario Económico</a></li>
+    </ul>
+    </nav>
+
+  <main>
+    <section class="widget-container">
+      <h2>Mapa de Calor de Divisas</h2>
+      <div class="tradingview-widget-container" id="heatmap-widget"></div>
+    </section>
+
+    <section class="widget-container">
+      <h2>Tipos de Cambio Cruzado</h2>
+      <div class="tradingview-widget-container" id="crossrates-widget"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Datos proporcionados por <a href="https://tradingview.com" target="_blank">TradingView</a></p>
+  </footer>
+
+  <script src="forex.js"></script>
+</body>
+</html>

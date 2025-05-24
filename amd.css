@@ -1,0 +1,217 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+header {
+    position: relative;
+    background: linear-gradient(45deg, #ff6666, #ff3333, #ff6666);
+    background-size: 300% 300%;
+    animation: gradientShift 10s ease infinite;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s ease;
+    overflow: hidden;
+    font-size: 2vh;
+}
+
+header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+    transition: background 0.3s ease;
+}
+
+header:hover:after {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes dataMove {
+    0% {
+        opacity: 1;
+        transform: translateY(100%);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-5500%);
+    }
+}
+
+.header {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 8px 16px;
+    background: linear-gradient(to right, #ff6666, #ff3333);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1.4vh;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #cc0000;
+}
+
+main {
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 2em;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.content-wrapper {
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Títulos */
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 20px;
+    border-left: 4px solid #007acc;
+    padding-left: 0.75rem;
+    color: #24292f;
+  }
+  
+  /* Reporte individual */
+  .report-card {
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .report-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  
+  .report-card h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: #007acc;
+  }
+  
+  .report-card .report-date {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Sección de cotización */
+  .cotizacion .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+  }
+  
+  /* Contenedor para gráficos */
+  .chart-container {
+    margin-top: 2rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Footer */
+  .site-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ff3333;
+    color: white;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 600px) {
+    .main-nav {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+  
+    .report-card,
+    .card,
+    .chart-container {
+      padding: 1rem;
+    }
+  
+    .content-wrapper {
+      padding: 0 0.75rem;
+    }
+  }
