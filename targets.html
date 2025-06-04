@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Targets | PerspectiveApp</title>
+  <link rel="stylesheet" href="targets.css" />
+</head>
+<body>
+  <header>
+    <h1>Perspective App</h1>
+  </header>
+  <nav>
+    <ul id="mainNav">
+      <li><a href="index.html" onclick="loadSection('economy')">Volver a Inicio</a></li>
+      <li><a href="economy.html">Economía</a></li>
+      <li><a href="inversor_bienes.html">Inversiones</a></li>
+    </ul>
+  </nav>
+
+  <div class="glass-container">
+    <h1>🎯 Mis Objetivos</h1>
+
+    <div id="targetsList" class="targets-list"></div>
+
+    <button class="new-target-btn" onclick="toggleForm()">➕ Nuevo Objetivo</button>
+
+    <div id="newTargetForm" class="form-container hidden">
+      <h2>Nuevo Objetivo</h2>
+      <input type="text" id="targetName" placeholder="Nombre del objetivo" />
+      <input type="number" id="targetGoal" placeholder="Meta ($)" />
+      <input type="date" id="targetDeadline" />
+
+      <div class="radio-group">
+        <label><input type="radio" name="startOption" value="today" checked /> Comienzo hoy</label>
+        <label><input type="radio" name="startOption" value="past" /> Ya vengo ahorrando</label>
+      </div>
+
+      <div id="pastData" class="hidden">
+        <input type="date" id="targetStartDate" placeholder="Fecha de inicio" />
+        <input type="number" id="initialSaved" placeholder="Monto ya ahorrado ($)" />
+      </div>
+
+      <button onclick="createTarget()">✅ Crear Objetivo</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="targets.js"></script>
+</body>
+</html>

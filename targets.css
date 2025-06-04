@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: radial-gradient(circle at center, #0f0f0f, #000000);
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  header, nav {
+    width: 100%;
+  }
+  
+  main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+    
+  
+  header h1 {
+    color: #00ffc8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin: 0;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  
+  nav {
+    background-color: #1e1e1e;
+    padding: 12px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  #mainNav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #mainNav li a {
+    color: #00ffc8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    padding: 6px 12px;
+    border-radius: 6px;
+  }
+  
+  #mainNav li a:hover,
+  #mainNav li a:focus {
+    color: #ff4081;
+    background-color: #222;
+    outline: none;
+  }
+  
+  /* Responsive: en pantallas pequeñas apila el menú vertical */
+  @media (max-width: 480px) {
+    #mainNav {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    nav {
+      padding: 15px 0;
+    }
+  }
+  
+
+  
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00ff95;
+  }
+  
+  .targets-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .target-card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 15px 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 255, 170, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .target-card span {
+    font-size: 16px;
+  }
+  
+  .target-card button {
+    background: transparent;
+    color: #00ff95;
+    border: 1px solid #00ff95;
+    border-radius: 8px;
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .target-card button:hover {
+    background: #00ff95;
+    color: #000;
+  }
+  
+  .new-target-btn {
+    width: 100%;
+    background: #00ff95;
+    color: #000;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .new-target-btn:hover {
+    transform: scale(1.03);
+  }
+  
+  .form-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.08);
+    color: #f0f0f0;
+    outline: none;
+  }
+  
+  input::placeholder {
+    color: #aaa;
+  }
+  
+  .radio-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  .radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+  }
+
+  /* Estilo general para las tarjetas */
+.target-card {
+    background: #1e1e2f;
+    color: white;
+    border-radius: 12px;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 255, 200, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+  }
+  
+  .target-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .target-card button {
+    background-color: #00ffc8;
+    border: none;
+    color: #000;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  .target-card button:hover {
+    background-color: #00caa0;
+  }
+  
+  .glass-container {
+    margin-top: 5vh;
+    margin-left: 0;
+    background: rgba(30, 30, 47, 0.95);
+    border: 1px solid #00ffc8;
+    border-radius: 16px;
+    padding: 24px;
+    color: white;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0 0 25px rgba(0, 255, 200, 0.3);
+  }
+  
+  .glass-container h2 {
+    margin-top: 0;
+    color: #00ffc8;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .glass-container p {
+    margin: 5px 0;
+  }
+  
+  .glass-container input[type="number"] {
+    padding: 8px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .glass-container button {
+    background: #ff4081;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  .glass-container button:hover {
+    background: #e03570;
+  }
+  
+  .glass-container ul {
+    list-style: none;
+    padding-left: 0;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .glass-container ul li {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 6px;
+  }
+  
+  /* Estilo para ocultar elementos */
+  .hidden {
+    display: none;
+  }
+  
+
+  #stats,
+  #history {
+  margin-top: 30px;
+}
+
+#stats p {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+#stats span,
+#history span {
+  font-weight: bold;
+  color: #00ff95;
+}
+
+canvas {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#history {
+  margin-top: 20px;
+}
+
+#movementList {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+#movementList li {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  color: #f0f0f0;
+  border-left: 3px solid #00ff95;
+}
+
+  
+  .form-container button {
+    background: #00ff95;
+    color: #000;
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .form-container button:hover {
+    transform: scale(1.03);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .glass-container {
+      padding: 20px;
+    }
+  
+    h1, h2 {
+      font-size: 22px;
+    }
+  
+    .target-card {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .target-card button {
+      width: 100%;
+    }
+  }
+  
