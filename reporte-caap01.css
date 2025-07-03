@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 250vh;
+    width: 100%;
+    max-width: 100%;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    background-color: #0071ce;
+    color: white;
+    padding: 2dvh 0;
+    text-align: center;
+    font-size: 2.4dvh;
+    font-weight: 700;
+    margin-bottom: 1dvh;
+    box-shadow: 0 3px 8px rgba(0, 113, 206, 0.6);
+    letter-spacing: 0.05em;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: #005bb5;
+    padding: 10px 5px;
+    margin: 0 auto 3dvh auto;
+    width: 95%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 91, 181, 0.3);
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.8dvh;
+    padding: 0.4dvh 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    background-color: #003d7a;
+  }
+
+.fecha {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.intro, .datos-clave, .conclusion {
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+table th, table td {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+table th {
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+}
+
+section.tablas table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.conclusion p {
+    margin-bottom: 15px;
+}

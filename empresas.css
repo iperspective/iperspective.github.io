@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f0f0f0;
     height: 150vh;
+    max-width: 100%
 }
 
 header {
@@ -112,7 +113,7 @@ footer {
     padding: 1em 0;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 90%;
 }
 
 @media (max-width: 480px) {

@@ -248,7 +248,7 @@ nav button:hover {
 }
 
 #latest-videos {
-  max-width: 95%;  
+  max-width: 75%;  
   margin: 20px auto; 
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0.07);
