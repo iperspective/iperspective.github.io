@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Población – Perspective App</title>
+  <link rel="stylesheet" href="population.css" />
+  <script type="module" src="population.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Sección de Población</h1>
+  </header>
+
+  <nav>
+    <ul id="mainNav">
+      <li><a href="index.html">Volver al Inicio</a></li>
+      <li><a href="society.html">Volver a Sociedad</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="intro container">
+      <h2>¿Qué encontrás en esta sección?</h2>
+      <p>Explorá visualizaciones y datos clave sobre población mundial: crecimiento, estructura por edades, nacimientos y proyecciones a futuro.</p>
+    </section>
+
+    <section class="charts container">
+        <h2>Población por región mundial (con proyecciones)</h2>
+        <p class="chart-desc">Estimaciones históricas y proyecciones futuras según el escenario medio de la ONU, desglosadas por región.</p>
+        <iframe src="https://ourworldindata.org/grapher/population-regions-with-projections?tab=chart" loading="lazy" allow="web-share; clipboard-write"></iframe>
+      </section>
+      
+      <section class="charts container">
+        <h2>Población por grupo etario (mundo)</h2>
+        <p class="chart-desc">Distribución global de la población por franjas etarias: niños, adultos y mayores, desde 1950 hasta proyecciones al 2100.</p>
+        <iframe src="https://ourworldindata.org/grapher/population-by-age-group?tab=chart" loading="lazy" allow="web-share; clipboard-write"></iframe>
+      </section>
+      
+      <section class="charts container">
+        <h2>Población mundial (1800 a 2100)</h2>
+        <p class="chart-desc">Crecimiento de la población a lo largo de dos siglos, con proyecciones futuras basadas en el escenario de fertilidad media de la ONU.</p>
+        <iframe src="https://ourworldindata.org/grapher/population-long-run-with-projections?tab=chart" loading="lazy" allow="web-share; clipboard-write"></iframe>
+      </section>
+      
+      <section class="charts container">
+        <h2>Tasa de crecimiento de la población (1950-2100)</h2>
+        <p class="chart-desc">Muestra la variación porcentual de la población mundial considerando nacimientos, muertes y migraciones.</p>
+        <iframe src="https://ourworldindata.org/grapher/population-growth-rates?tab=chart" loading="lazy" allow="web-share; clipboard-write"></iframe>
+      </section>
+      
+      <section class="charts container">
+        <h2>Nacimientos por año y región del mundo</h2>
+        <p class="chart-desc">Cantidad de nacimientos registrados anualmente en distintas regiones del mundo desde 1950.</p>
+        <iframe src="https://ourworldindata.org/grapher/annual-number-of-births-by-world-region?tab=chart" loading="lazy" allow="web-share; clipboard-write"></iframe>
+      </section>
+      
+
+    <section id="news" class="container">
+      <h2>Noticias recientes sobre demografía</h2>
+      <div id="newsList">Cargando...</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Perspective App</p>
+  </footer>
+</body>
+</html>

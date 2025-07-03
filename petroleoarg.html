@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF‑8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Petróleo en Argentina – Perspective App</title>
+  <link rel="stylesheet" href="petroleoarg.css" />
+  <script type="module" src="petroleoarg.js"></script>
+
+</head>
+<body>
+  <header><h1>Petróleo en Argentina</h1></header>
+
+  <nav>
+    <ul id="mainNav">
+      <li><a href="oil.html">Volver a Petróleo</a></li>
+      <li><a href="energy.html">Volver a Energía</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="stats container">
+        <h2>Producción actual de petróleo (2025)</h2>
+        
+        <div class="stat-card">
+          <div class="stat-value" id="prodTotal">Cargando...</div>
+          <div class="stat-label">Producción total</div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-value" id="prodConvencional">Cargando...</div>
+          <div class="stat-label">Producción convencional</div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-value" id="prodShale">Cargando...</div>
+          <div class="stat-label">Shale Oil (No convencional)</div>
+        </div>
+      
+        <div class="source-link">
+          <small>
+            Fuente: 
+            <a href="https://www.argentina.gob.ar/economia/energia/planeamiento-energetico/panel-de-indicadores/superset-produccion-petroleo-conv-y-no-conv" target="_blank" rel="noopener">
+              Secretaría de Energía – Argentina
+            </a>
+          </small>
+        </div>
+      </section>
+      
+          
+
+    <section class="charts container">
+      <h2>Producción histórica Petróleo (TWh)</h2>
+      <iframe src="https://ourworldindata.org/grapher/oil-production-by-country?country=~ARG&tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+    </section>
+
+    <section class="charts container">
+        <h2>Producción histórica Gas (TWh)</h2>
+        <iframe src="https://ourworldindata.org/grapher/gas-production-by-country?country=~ARG&tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+      </section>
+
+      <section class="charts container">
+        <h2>Participación de fósiles en la generación eléctrica (Argentina)</h2>
+        <iframe 
+          src="https://ourworldindata.org/grapher/share-electricity-fossil-fuels?tab=chart&country=~ARG"
+          loading="lazy"
+          style="width: 100%; height: 600px; border: 0px none;"
+          allow="web-share; clipboard-write">
+        </iframe>
+      </section>
+
+      <section class="charts container">
+        <h2>Exploración de hidrocarburos – Sísmicas 3D</h2>
+        <p>
+          Información geográfica sobre exploración y producción de hidrocarburos. Fuente oficial actualizada mensualmente.
+        </p>
+      
+        <div class="iframe-wrapper">
+          <iframe 
+            src="http://datos.energia.gob.ar/dataset/exploracion-hidrocarburos-sismicas-3d/resource/dae27747-fb0b-49a2-9be0-712bfc0f6266/view/6468da42-a668-471f-8448-af93d59896ef" 
+            width="100%" 
+            height="450" 
+            frameborder="0"
+            loading="lazy"
+            allow="web-share; clipboard-write">
+          </iframe>
+        </div>
+      </section>
+      
+    
+    <section class="news container">
+      <h2>Noticias recientes de energía (Argentina)</h2>
+      <div id="newsList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Perspective App</p>
+  </footer>
+</body>
+</html>

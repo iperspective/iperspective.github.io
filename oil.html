@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Petróleo - Perspective App</title>
+  <link rel="stylesheet" href="oil.css" />
+  <script type="module" src="oil.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Sección de Petróleo</h1>
+  </header>
+
+  <nav>
+    <ul id="mainNav">
+      <li><a href="index.html">Volver a Inicio</a></li>
+      <li><a href="energy.html">Volver a Energía</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="intro container">
+      <h2>¿Qué encontrás en esta sección?</h2>
+      <p>Explorá todo sobre el petróleo: precios en tiempo real, producción global, consumo, noticias clave y visualizaciones interactivas.</p>
+    </section>
+
+    <section class="container">
+        <h2>Precio del petróleo (WTI) en vivo</h2>
+       <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Siga los mercados en TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+    {
+    "lineWidth": 2,
+    "lineType": 0,
+    "chartType": "area",
+    "fontColor": "rgb(106, 109, 120)",
+    "gridLineColor": "rgba(46, 46, 46, 0.06)",
+    "volumeUpColor": "rgba(34, 171, 148, 0.5)",
+    "volumeDownColor": "rgba(247, 82, 95, 0.5)",
+    "backgroundColor": "#ffffff",
+    "widgetFontColor": "#0F0F0F",
+    "upColor": "#22ab94",
+    "downColor": "#f7525f",
+    "borderUpColor": "#22ab94",
+    "borderDownColor": "#f7525f",
+    "wickUpColor": "#22ab94",
+    "wickDownColor": "#f7525f",
+    "colorTheme": "light",
+    "isTransparent": false,
+    "locale": "es",
+    "chartOnly": false,
+    "scalePosition": "right",
+    "scaleMode": "Normal",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+    "valuesTracking": "1",
+    "changeMode": "price-and-percent",
+    "symbols": [
+      [
+        "MARKETSCOM:OIL|3M"
+      ]
+    ],
+    "dateRanges": [
+      "1d|1",
+      "1m|30",
+      "3m|60",
+      "12m|1D",
+      "60m|1W",
+      "all|1M"
+    ],
+    "fontSize": "10",
+    "headerFontSize": "medium",
+    "autosize": true,
+    "width": "100%",
+    "height": "550",
+    "noTimeScale": false,
+    "hideDateRanges": false,
+    "hideMarketStatus": false,
+    "hideSymbolLogo": false
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+      </section>
+      
+
+    <section class="options container">
+      <h2>Explorá más secciones</h2>
+      <button onclick="window.location.href = 'petroleoarg.html'">Petróleo en Argentina</button>
+      <button onclick="alert('Próximamente: Vaca Muerta')">Vaca Muerta</button>
+      <button onclick="alert('Próximamente: Precios Internacionales')">Precios Internacionales</button>
+    </section>
+
+    <section id="news" class="container">
+      <h2>Noticias recientes</h2>
+      <div id="newsList"></div>
+    </section>
+
+    <section id="visualizacion-global" class="container">
+      <h2>Visualización global de petróleo y consumo fósil</h2>
+
+      <div class="grafico">
+        <h3>Producción de petróleo por país (TWh)</h3>
+        <iframe src="https://ourworldindata.org/grapher/oil-production-by-country?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0;"></iframe>
+      </div>
+
+      <div class="grafico">
+        <h3>Consumo global de combustibles fósiles (TWh)</h3>
+        <iframe src="https://ourworldindata.org/grapher/global-fossil-fuel-consumption?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0;"></iframe>
+      </div>
+
+      <div class="grafico">
+        <h3>Consumo por país (2023)</h3>
+        <iframe src="https://ourworldindata.org/grapher/fossil-fuel-primary-energy?tab=map" loading="lazy" style="width: 100%; height: 600px; border: 0;"></iframe>
+      </div>
+
+      <div class="grafico">
+        <h3>Consumo per cápita (2023)</h3>
+        <iframe src="https://ourworldindata.org/grapher/fossil-fuels-per-capita?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0;"></iframe>
+      </div>
+
+      <div class="grafico">
+        <h3>Porcentaje de electricidad generada con fósiles (2024)</h3>
+        <iframe src="https://ourworldindata.org/grapher/share-electricity-fossil-fuels?tab=map" loading="lazy" style="width: 100%; height: 600px; border: 0;"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Perspective App</p>
+  </footer>
+</body>
+</html>
